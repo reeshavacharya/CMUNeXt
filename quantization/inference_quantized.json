@@ -1,13 +1,13 @@
 {
-    "image_name": "benign (369).png",
-    "engine_path": "../checkpoint/cmunext_int8.plan",
-    "loss": 0.04171866551041603,
-    "iou": 0.9273399023726613,
-    "dice": 0.9623003199706028,
-    "F1": 0.9622998182611383,
-    "accuracy": 0.9990997314453125,
-    "sensitivity": 0.964148526294304,
-    "precision": 0.9604591824483939,
-    "specificity": 0.9995212724731755,
-    "inference_time_sec": 0.0499403709982289
+    "image_name": "malignant (34).png",
+    "engine_path": "../checkpoint/quantized/cmunext_int8.path",
+    "loss": 0.21526268124580383,
+    "iou": 0.6897382930794136,
+    "dice": 0.8163847572187294,
+    "F1": 0.8163842562610292,
+    "accuracy": 0.9862518310546875,
+    "sensitivity": 0.8037720703034623,
+    "precision": 0.8293995855778884,
+    "specificity": 0.9934648816541866,
+    "inference_time_sec": 0.051290326002344955
 }

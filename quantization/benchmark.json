@@ -9,7 +9,7 @@
         "sensitivity": 0.6468187216991195,
         "precision": 0.7048160716930038,
         "specificity": 0.8370081833010288,
-        "inference_time_sec": 0.008727990833383365
+        "inference_time_sec": 0.007870410576832266
     },
     "quantized": {
         "loss": 0.4651969145410336,
@@ -20,6 +20,6 @@
         "sensitivity": 0.6308305152015782,
         "precision": 0.7086020608916875,
         "specificity": 0.8384559313745484,
-        "inference_time_sec": 0.004126706068396184
+        "inference_time_sec": 0.004147695662179772
     }
 }

@@ -5,6 +5,7 @@ import json
 
 import tensorrt as trt
 import pycuda.driver as cuda
+import pycuda.autoinit
 import numpy as np
 import torch
 
@@ -14,7 +15,7 @@ import utils.losses as losses
 
 TRT_LOGGER = trt.Logger(trt.Logger.WARNING)
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-EXPORT_PATH = os.path.join(PROJECT_ROOT, "checkpoint", "quantized", "cmunext_int8.plan")
+EXPORT_PATH = os.path.join(PROJECT_ROOT, "checkpoint", "quantized", "cmunext_int8.path")
 
 # Load serialized engine
 with open(EXPORT_PATH, "rb") as f:
@@ -25,7 +26,7 @@ engine = runtime.deserialize_cuda_engine(engine_data)
 if engine is None:
     print("FAILED: Engine could not be deserialized.")
     print(
-        "Check if the TensorRT version and GPU architecture match the ones used to build the .plan file."
+        "Check if the TensorRT version and GPU architecture match the ones used to build the .path file."
     )
     exit(1)
 # Allocate buffers
@@ -119,7 +120,7 @@ iou, dice, SE, PC, F1, SP, ACC = iou_score(output_t, target_t)
 
 metrics = {
     "image_name": image_name,
-    "engine_path": os.path.join("..", "checkpoint", "cmunext_int8.plan"),
+    "engine_path": os.path.join("..", "checkpoint", "quantized", "cmunext_int8.path"),
     "loss": loss_val,
     "iou": float(iou),
     "dice": float(dice),

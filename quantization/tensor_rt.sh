@@ -3,8 +3,7 @@ export PATH=$TENSORRT_HOME/bin:$PATH
 export LD_LIBRARY_PATH=$TENSORRT_HOME/lib:$LD_LIBRARY_PATH
 
 trtexec \
-    --onnx=../checkpoint/CMUNeXt_model_busi_quantized.onnx \
+    --onnx=../checkpoint/quantized/CMUNeXt_model_busi_quantized.onnx \
     --int8 \
     --precisionConstraints=obey \
-    --exportLayerInfo=engine_info.json \
-    --saveEngine=../checkpoint/quantized/cmunext_int8.plan
+    --saveEngine=../checkpoint/quantized/cmunext_int8.path

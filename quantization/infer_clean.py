@@ -56,7 +56,7 @@ def run_inference_once() -> None:
 
 	base_dir = os.path.join(PROJECT_ROOT, "data", "busi")
 	val_list_path = os.path.join(base_dir, "busi_val.txt")
-	checkpoint_path = os.path.join(PROJECT_ROOT, "checkpoint", "quantized", "CMUNeXt_model_busi_train_int8.pth")
+	checkpoint_path = os.path.join(PROJECT_ROOT, "checkpoint", "CMUNeXt_model_busi_train.pth")
 
 	model = load_model(checkpoint_path, device)
 	criterion = losses.BCEDiceLoss().to(device)
