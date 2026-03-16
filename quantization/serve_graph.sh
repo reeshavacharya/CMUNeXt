@@ -1,0 +1,1 @@
+netron $HOME/CMUNeXt/checkpoint/quantized/CMUNeXt_model_busi_quantized.onnx

@@ -15,7 +15,7 @@ import utils.losses as losses
 
 TRT_LOGGER = trt.Logger(trt.Logger.WARNING)
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-EXPORT_PATH = os.path.join(PROJECT_ROOT, "checkpoint", "quantized", "cmunext_int8.path")
+EXPORT_PATH = os.path.join(PROJECT_ROOT, "checkpoint", "quantized", "cmunext_int8.plan")
 
 # Load serialized engine
 with open(EXPORT_PATH, "rb") as f:
@@ -120,7 +120,7 @@ iou, dice, SE, PC, F1, SP, ACC = iou_score(output_t, target_t)
 
 metrics = {
     "image_name": image_name,
-    "engine_path": os.path.join("..", "checkpoint", "quantized", "cmunext_int8.path"),
+    "engine_path": os.path.join("..", "checkpoint", "quantized", "cmunext_int8.plan"),
     "loss": loss_val,
     "iou": float(iou),
     "dice": float(dice),

@@ -27,7 +27,7 @@ CLEAN_CHECKPOINT_PATH = os.path.join(
 	PROJECT_ROOT, "checkpoint", "CMUNeXt_model_busi_train.pth"
 )
 TRT_ENGINE_PATH = os.path.join(
-	PROJECT_ROOT, "checkpoint", "quantized", "cmunext_int8.path"
+	PROJECT_ROOT, "checkpoint", "quantized", "cmunext_int8.plan"
 )
 
 BENCHMARK_PER_CASE_PATH = os.path.join(
