@@ -1,0 +1,13 @@
+{
+    "image_name": "benign (225).png",
+    "checkpoint": "/home/ree/CMUNeXt/checkpoint/CMUNeXt_model_busi_train.pth",
+    "loss": 1.1614433526992798,
+    "iou": 3.373819151910192e-09,
+    "dice": 6.7476382810550725e-09,
+    "F1": 0.0,
+    "accuracy": 0.95477294921875,
+    "sensitivity": 0.0,
+    "precision": 0.0,
+    "specificity": 0.9999999999840185,
+    "inference_time_sec": 1.9005197979859076
+}

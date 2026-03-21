@@ -4,7 +4,7 @@ trtexec \
     --precisionConstraints=obey \
     --dumpLayerInfo \
     --profilingVerbosity=detailed \
-    --exportLayerInfo=layer_info.json \
+    --exportLayerInfo=trt_layer.json \
     --exportProfile=trt_profile.json \
     --exportOutput=trt_output.json \
     --saveEngine=../checkpoint/quantized/cmunext_int8.plan \

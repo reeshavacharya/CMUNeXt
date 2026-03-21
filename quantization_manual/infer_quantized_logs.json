@@ -1,0 +1,5028 @@
+{
+    "image_name": "benign (225).png",
+    "checkpoint": "/home/ree/CMUNeXt/checkpoint/CMUNeXt_model_busi_train.pth",
+    "layers": {
+        "encoder4.block.2.4": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        128,
+                        512,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 0.09892617911100388,
+                    "mean": -0.00016668526222929358,
+                    "std": 0.02701975405216217
+                },
+                "quantized": {
+                    "shape": [
+                        128,
+                        512,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -0.2691192626953125,
+                    "std": 48.3599967956543
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            512,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up_conv2.conv.2": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            32,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            32,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder3.block.0.0.fn.0": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        32,
+                        1,
+                        7,
+                        7
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -0.27366605401039124,
+                    "max": 0.2833361327648163,
+                    "mean": -0.005172953475266695,
+                    "std": 0.0987357348203659
+                },
+                "quantized": {
+                    "shape": [
+                        32,
+                        1,
+                        7,
+                        7
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -3.2857143878936768,
+                    "std": 57.37042999267578
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            32,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -127.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            32,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder2.block.0.1": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        64,
+                        16,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -0.27176257967948914,
+                    "max": 0.361007958650589,
+                    "mean": 0.0028352332301437855,
+                    "std": 0.1380494236946106
+                },
+                "quantized": {
+                    "shape": [
+                        64,
+                        16,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": 1.6328125,
+                    "std": 73.2396011352539
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            16,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            64,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up_conv3.conv.8": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            32,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            32,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up_conv2.conv.8": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            16,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            16,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up2.up.1": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        16,
+                        32,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -0.08519202470779419,
+                    "max": 0.08908074349164963,
+                    "mean": 0.0009762737900018692,
+                    "std": 0.03338545188307762
+                },
+                "quantized": {
+                    "shape": [
+                        16,
+                        32,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": 1.4090712070465088,
+                    "std": 57.45387649536133
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            32,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            16,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder1.block.0.4": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        16,
+                        64,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -0.205132856965065,
+                    "max": 0.2512696385383606,
+                    "mean": -0.002959835808724165,
+                    "std": 0.08508037775754929
+                },
+                "quantized": {
+                    "shape": [
+                        16,
+                        64,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -1.861328125,
+                    "std": 56.026763916015625
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            64,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            16,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up_conv4.conv.5": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            512,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            512,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up_conv5.conv.0": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        320,
+                        160,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": 0.3984185755252838,
+                    "std": 0.0665477067232132
+                },
+                "quantized": {
+                    "shape": [
+                        320,
+                        160,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -0.38622167706489563,
+                    "std": 51.051963806152344
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            320,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            320,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder4.block.0.0.fn.2": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder1.block.0.3": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            64,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -3.0,
+                        "max": 2.995950222015381,
+                        "mean": 0.17322200536727905,
+                        "std": 0.4463097155094147
+                    },
+                    "integer_check": {
+                        "all_integer": false,
+                        "max_abs_diff_from_round": 0.1586552858352661
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            64,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.15865525603294373,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up4.up.2": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder4.block.0.1": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        512,
+                        128,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 0.13666199147701263,
+                    "mean": -0.0023415114264935255,
+                    "std": 0.048956502228975296
+                },
+                "quantized": {
+                    "shape": [
+                        512,
+                        128,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -2.6813507080078125,
+                    "std": 61.62356948852539
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            512,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder5.up.conv.0": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        256,
+                        160,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -0.03840697184205055,
+                    "max": 0.04210713133215904,
+                    "mean": -0.0001979521766770631,
+                    "std": 0.014414537698030472
+                },
+                "quantized": {
+                    "shape": [
+                        256,
+                        160,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -0.4132910370826721,
+                    "std": 50.81849670410156
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            160,
+                            16,
+                            16
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            256,
+                            16,
+                            16
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -127.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder2.up.conv.1": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            32,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            32,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder1.up.conv.1": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            16,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            16,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up_conv2.conv.0": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        32,
+                        16,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -0.11101880669593811,
+                    "max": 0.1168125718832016,
+                    "mean": 0.001138908788561821,
+                    "std": 0.04501894488930702
+                },
+                "quantized": {
+                    "shape": [
+                        32,
+                        16,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": 1.75390625,
+                    "std": 61.62383270263672
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            32,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            32,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder2.up.conv.0": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        32,
+                        16,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -0.19277936220169067,
+                    "max": 0.2564108073711395,
+                    "mean": -0.0010076636681333184,
+                    "std": 0.061628974974155426
+                },
+                "quantized": {
+                    "shape": [
+                        32,
+                        16,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -0.63671875,
+                    "std": 46.14158248901367
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            16,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            32,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -127.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder4.block.1.6": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder4.up.conv.1": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            160,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            160,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up_conv2.conv.3": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        64,
+                        32,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -0.2068122774362564,
+                    "max": 0.21219921112060547,
+                    "mean": -0.0029156585223972797,
+                    "std": 0.0949273481965065
+                },
+                "quantized": {
+                    "shape": [
+                        64,
+                        32,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -1.98486328125,
+                    "std": 69.84257507324219
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            32,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            64,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up5.up.2": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            160,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            160,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder5.block.0.6": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            160,
+                            16,
+                            16
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            160,
+                            16,
+                            16
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up_conv4.conv.8": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder2.block.0.3": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            64,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            64,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder4.block.1.3": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            512,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            512,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder1.block.0.0.fn.0": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        16,
+                        1,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -0.6482762694358826,
+                    "max": 0.5162802338600159,
+                    "mean": 0.009579983539879322,
+                    "std": 0.21146811544895172
+                },
+                "quantized": {
+                    "shape": [
+                        16,
+                        1,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": 3.7083332538604736,
+                    "std": 74.22328186035156
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            16,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -10.0,
+                        "max": 10.0,
+                        "mean": 2.3728885650634766,
+                        "std": 3.0395467281341553
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            16,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -16.0,
+                        "max": 19.0,
+                        "mean": 0.01813983917236328,
+                        "std": 2.928572654724121
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up_conv3.conv.0": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        64,
+                        32,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -0.10096786171197891,
+                    "max": 0.09731040149927139,
+                    "mean": -0.00015059828001540154,
+                    "std": 0.03245760127902031
+                },
+                "quantized": {
+                    "shape": [
+                        64,
+                        32,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -0.0866970494389534,
+                    "std": 58.75187301635742
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            64,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            64,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder5.block.0.1": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        640,
+                        160,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -0.10657314956188202,
+                    "max": 0.10818394273519516,
+                    "mean": -0.0014128743205219507,
+                    "std": 0.04247945174574852
+                },
+                "quantized": {
+                    "shape": [
+                        640,
+                        160,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -1.9082129001617432,
+                    "std": 66.8042984008789
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            160,
+                            16,
+                            16
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            640,
+                            16,
+                            16
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder4.up.conv.0": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        160,
+                        128,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -0.07657536119222641,
+                    "max": 0.10325073450803757,
+                    "mean": -0.00027142217732034624,
+                    "std": 0.01905789040029049
+                },
+                "quantized": {
+                    "shape": [
+                        160,
+                        128,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -0.2760545611381531,
+                    "std": 42.00312423706055
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            160,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up_conv2.conv.5": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            64,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            64,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder5.block.0.0.fn.0": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        160,
+                        1,
+                        7,
+                        7
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -0.20375105738639832,
+                    "max": 0.24090494215488434,
+                    "mean": -0.005133953411132097,
+                    "std": 0.07925114780664444
+                },
+                "quantized": {
+                    "shape": [
+                        160,
+                        1,
+                        7,
+                        7
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -4.1496171951293945,
+                    "std": 65.00987243652344
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            160,
+                            16,
+                            16
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            160,
+                            16,
+                            16
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder4.block.1.0.fn.0": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        128,
+                        1,
+                        7,
+                        7
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -0.19278044998645782,
+                    "max": 0.25031137466430664,
+                    "mean": -0.010452846996486187,
+                    "std": 0.08024681359529495
+                },
+                "quantized": {
+                    "shape": [
+                        128,
+                        1,
+                        7,
+                        7
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -8.339763641357422,
+                    "std": 64.04126739501953
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder5.block.0.3": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            640,
+                            16,
+                            16
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            640,
+                            16,
+                            16
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up_conv5.conv.6": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        160,
+                        640,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -0.0008024978451430798,
+                    "std": 0.021319502964615822
+                },
+                "quantized": {
+                    "shape": [
+                        160,
+                        640,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -2.139284610748291,
+                    "std": 61.02206039428711
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            640,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            160,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder2.block.0.0.fn.0": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        16,
+                        1,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -0.5232785940170288,
+                    "max": 0.3973695635795593,
+                    "mean": 0.034540072083473206,
+                    "std": 0.19758661091327667
+                },
+                "quantized": {
+                    "shape": [
+                        16,
+                        1,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": 14.9375,
+                    "std": 72.86261749267578
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            16,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            16,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up_conv4.conv.0": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        256,
+                        128,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -0.4234386682510376,
+                    "std": 0.20220918953418732
+                },
+                "quantized": {
+                    "shape": [
+                        256,
+                        128,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -0.8834741711616516,
+                    "std": 56.25913619995117
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            256,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            256,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder5.block.0.4": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        160,
+                        640,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -0.000588160241022706,
+                    "std": 0.02252975106239319
+                },
+                "quantized": {
+                    "shape": [
+                        160,
+                        640,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -0.9165132641792297,
+                    "std": 51.05634689331055
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            640,
+                            16,
+                            16
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            160,
+                            16,
+                            16
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder3.up.conv.0": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        128,
+                        32,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -0.1167088970541954,
+                    "max": 0.17490926384925842,
+                    "mean": -0.0014138944679871202,
+                    "std": 0.03931388258934021
+                },
+                "quantized": {
+                    "shape": [
+                        128,
+                        32,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -1.8527017831802368,
+                    "std": 46.74146270751953
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            32,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up_conv3.conv.6": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        32,
+                        128,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -0.1175152137875557,
+                    "max": 0.12691660225391388,
+                    "mean": 0.0017886767163872719,
+                    "std": 0.04897831752896309
+                },
+                "quantized": {
+                    "shape": [
+                        32,
+                        128,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": 2.137939453125,
+                    "std": 62.60282516479492
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            32,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Conv_1x1": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        1,
+                        16,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -1.2003659009933472,
+                    "max": 1.476212739944458,
+                    "mean": -0.015435364097356796,
+                    "std": 0.7127297520637512
+                },
+                "quantized": {
+                    "shape": [
+                        1,
+                        16,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -103.0,
+                    "max": 127.0,
+                    "mean": -1.375,
+                    "std": 61.26160430908203
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            }
+        },
+        "encoder4.block.0.4": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        128,
+                        512,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 0.15552225708961487,
+                    "mean": -0.000357082491973415,
+                    "std": 0.030971700325608253
+                },
+                "quantized": {
+                    "shape": [
+                        128,
+                        512,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -0.47418212890625,
+                    "std": 42.644107818603516
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            512,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up_conv3.conv.3": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        128,
+                        64,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -0.14577209949493408,
+                    "max": 0.14570091664791107,
+                    "mean": -0.0005987341864965856,
+                    "std": 0.06640232354402542
+                },
+                "quantized": {
+                    "shape": [
+                        128,
+                        64,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -0.5955810546875,
+                    "std": 69.824951171875
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            64,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up_conv5.conv.8": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            160,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            160,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder5.block.0.0.fn.2": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            160,
+                            16,
+                            16
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            160,
+                            16,
+                            16
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder4.block.0.0.fn.0": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        128,
+                        1,
+                        7,
+                        7
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -0.21709086000919342,
+                    "max": 0.21503795683383942,
+                    "mean": -0.006859403569251299,
+                    "std": 0.08241140097379684
+                },
+                "quantized": {
+                    "shape": [
+                        128,
+                        1,
+                        7,
+                        7
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -5.141103267669678,
+                    "std": 63.02178955078125
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder4.block.2.0.fn.0": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        128,
+                        1,
+                        7,
+                        7
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -0.19185397028923035,
+                    "max": 0.18961691856384277,
+                    "mean": -0.010213064961135387,
+                    "std": 0.0793834999203682
+                },
+                "quantized": {
+                    "shape": [
+                        128,
+                        1,
+                        7,
+                        7
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -8.368782043457031,
+                    "std": 65.97421264648438
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder2.block.0.4": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        16,
+                        64,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -0.29201018810272217,
+                    "max": 0.2140064686536789,
+                    "mean": -0.00737687386572361,
+                    "std": 0.08691313862800598
+                },
+                "quantized": {
+                    "shape": [
+                        16,
+                        64,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -4.162109375,
+                    "std": 56.844608306884766
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            64,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            16,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up5.up.1": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        160,
+                        256,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -0.5789099335670471,
+                    "std": 0.2825300693511963
+                },
+                "quantized": {
+                    "shape": [
+                        160,
+                        256,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": 0.6149868965148926,
+                    "std": 49.50379943847656
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            256,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            160,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder4.block.0.6": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder3.block.0.0.fn.2": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            32,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            32,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up_conv4.conv.6": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        128,
+                        512,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 0.06905078142881393,
+                    "mean": -0.00017673172987997532,
+                    "std": 0.023863108828663826
+                },
+                "quantized": {
+                    "shape": [
+                        128,
+                        512,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -0.4257354736328125,
+                    "std": 61.03639602661133
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            512,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up_conv2.conv.6": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        16,
+                        64,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -0.22416216135025024,
+                    "max": 0.21028676629066467,
+                    "mean": 0.0018263434758409858,
+                    "std": 0.07346117496490479
+                },
+                "quantized": {
+                    "shape": [
+                        16,
+                        64,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": 1.650390625,
+                    "std": 61.613975524902344
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            64,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            16,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up3.up.2": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            32,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            32,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up4.up.1": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        128,
+                        160,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -0.011529113166034222,
+                    "std": 0.014304200187325478
+                },
+                "quantized": {
+                    "shape": [
+                        128,
+                        160,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -0.7300398945808411,
+                    "std": 57.594932556152344
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            160,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder2.block.0.6": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            16,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            16,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder1.block.0.6": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            16,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            16,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "stem.conv.1": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            16,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -128.0,
+                        "max": 127.0,
+                        "mean": -19.953857421875,
+                        "std": 124.2958755493164
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            16,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -128.0,
+                        "max": 127.0,
+                        "mean": -1.239877700805664,
+                        "std": 6.204844951629639
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder3.block.0.6": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            32,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            32,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up2.up.2": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            16,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            16,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up_conv4.conv.2": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            256,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            256,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder4.block.1.4": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        128,
+                        512,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 0.11465077847242355,
+                    "mean": -7.646234007552266e-05,
+                    "std": 0.029479900375008583
+                },
+                "quantized": {
+                    "shape": [
+                        128,
+                        512,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -0.002532958984375,
+                    "std": 45.81991958618164
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            512,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up_conv4.conv.3": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        512,
+                        256,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -9.60262113949284e-05,
+                    "std": 0.03304170072078705
+                },
+                "quantized": {
+                    "shape": [
+                        512,
+                        256,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -0.17369842529296875,
+                    "std": 68.57453918457031
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            256,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            512,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder3.up.conv.1": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder4.block.0.3": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            512,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            512,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "stem.conv.0": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        16,
+                        3,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -0.33127158880233765,
+                    "max": 0.39765608310699463,
+                    "mean": 0.004693898372352123,
+                    "std": 0.1308899223804474
+                },
+                "quantized": {
+                    "shape": [
+                        16,
+                        3,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": 3.219907522201538,
+                    "std": 66.42431640625
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            3,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -102.0,
+                        "max": 127.0,
+                        "mean": -26.887216567993164,
+                        "std": 43.977821350097656
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            16,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -128.0,
+                        "max": 127.0,
+                        "mean": -19.953857421875,
+                        "std": 124.2958755493164
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder1.block.0.1": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        64,
+                        16,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -0.30866631865501404,
+                    "max": 0.3297998011112213,
+                    "mean": 0.003985072486102581,
+                    "std": 0.1370059847831726
+                },
+                "quantized": {
+                    "shape": [
+                        64,
+                        16,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": 2.5224609375,
+                    "std": 72.75735473632812
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            16,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 10.0,
+                        "mean": 2.3728885650634766,
+                        "std": 3.0395467281341553
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            64,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -3.0,
+                        "max": 3.0,
+                        "mean": 0.02498316764831543,
+                        "std": 0.7252709269523621
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder4.block.1.1": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        512,
+                        128,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 0.1303807646036148,
+                    "mean": -0.0007617964874953032,
+                    "std": 0.04843040183186531
+                },
+                "quantized": {
+                    "shape": [
+                        512,
+                        128,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -0.9292755126953125,
+                    "std": 63.29756546020508
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            512,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up3.up.1": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        32,
+                        128,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 0.06136147677898407,
+                    "mean": 0.0001727291091810912,
+                    "std": 0.016935886815190315
+                },
+                "quantized": {
+                    "shape": [
+                        32,
+                        128,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": 0.3443739116191864,
+                    "std": 51.635887145996094
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            32,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder3.block.0.1": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        128,
+                        32,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -0.2357257902622223,
+                    "max": 0.2955248951911926,
+                    "mean": -0.0020154642406851053,
+                    "std": 0.09862647205591202
+                },
+                "quantized": {
+                    "shape": [
+                        128,
+                        32,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -0.959716796875,
+                    "std": 68.71209716796875
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            32,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder3.block.0.4": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        32,
+                        128,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -0.18417677283287048,
+                    "max": 0.26911354064941406,
+                    "mean": -0.0012702940730378032,
+                    "std": 0.06294489651918411
+                },
+                "quantized": {
+                    "shape": [
+                        32,
+                        128,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -1.028564453125,
+                    "std": 49.493106842041016
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            32,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder4.block.2.1": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        512,
+                        128,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 0.11937486380338669,
+                    "mean": -0.0005153564852662385,
+                    "std": 0.04743633791804314
+                },
+                "quantized": {
+                    "shape": [
+                        512,
+                        128,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": -0.6487884521484375,
+                    "std": 65.2688980102539
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            512,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder3.block.0.3": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            64,
+                            64
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up_conv5.conv.2": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            320,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            320,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder4.block.1.0.fn.2": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up_conv3.conv.5": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder4.block.2.3": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            512,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            512,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder1.block.0.0.fn.2": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            16,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -13.0,
+                        "max": 19.0,
+                        "mean": 0.7847951650619507,
+                        "std": 1.8141002655029297
+                    },
+                    "integer_check": {
+                        "all_integer": false,
+                        "max_abs_diff_from_round": 0.1586552858352661
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            16,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.15865525603294373,
+                        "max": 2.995950222015381,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up_conv5.conv.5": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            640,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            640,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder1.up.conv.0": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        16,
+                        16,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -0.21796639263629913,
+                    "max": 0.2995670437812805,
+                    "mean": 0.002060083905234933,
+                    "std": 0.0644703209400177
+                },
+                "quantized": {
+                    "shape": [
+                        16,
+                        16,
+                        3,
+                        3
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": 3.151475667953491,
+                    "std": 45.21792221069336
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            16,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            16,
+                            256,
+                            256
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up_conv3.conv.2": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            64,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            64,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder4.block.2.0.fn.2": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "Up_conv5.conv.3": {
+            "weights": {
+                "original": {
+                    "shape": [
+                        640,
+                        320,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": 0.03621362894773483,
+                    "std": 0.029585739597678185
+                },
+                "quantized": {
+                    "shape": [
+                        640,
+                        320,
+                        1,
+                        1
+                    ],
+                    "dtype": "torch.float32",
+                    "min": -127.0,
+                    "max": 127.0,
+                    "mean": 0.06624335795640945,
+                    "std": 68.47058868408203
+                },
+                "integer_check": {
+                    "all_integer": true,
+                    "max_abs_diff_from_round": 0.0
+                }
+            },
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            320,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            640,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder5.up.conv.1": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            256,
+                            16,
+                            16
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            256,
+                            16,
+                            16
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder4.block.2.6": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            128,
+                            32,
+                            32
+                        ],
+                        "dtype": "torch.float32",
+                        "min": -0.0,
+                        "max": -0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        },
+        "encoder2.block.0.0.fn.2": {
+            "activations": {
+                "input": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            16,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                },
+                "output": {
+                    "stats": {
+                        "shape": [
+                            1,
+                            16,
+                            128,
+                            128
+                        ],
+                        "dtype": "torch.float32",
+                        "min": 0.0,
+                        "max": 0.0,
+                        "mean": 0.0,
+                        "std": 0.0
+                    },
+                    "integer_check": {
+                        "all_integer": true,
+                        "max_abs_diff_from_round": 0.0
+                    }
+                }
+            }
+        }
+    }
+}

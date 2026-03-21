@@ -98,8 +98,12 @@ class CMUNeXt(nn.Module):
             kernels: kernal size of cmunext blocks
         """
         super(CMUNeXt, self).__init__()
-        # Encoder
-        self.Maxpool = nn.MaxPool2d(kernel_size=2, stride=2)
+        # Encoder - Unique pooling layers for unique quantization scales
+        self.pool1 = nn.MaxPool2d(kernel_size=2, stride=2)
+        self.pool2 = nn.MaxPool2d(kernel_size=2, stride=2)
+        self.pool3 = nn.MaxPool2d(kernel_size=2, stride=2)
+        self.pool4 = nn.MaxPool2d(kernel_size=2, stride=2)
+
         self.stem = conv_block(ch_in=input_channel, ch_out=dims[0])
         self.encoder1 = CMUNeXtBlock(ch_in=dims[0], ch_out=dims[0], depth=depths[0], k=kernels[0])
         self.encoder2 = CMUNeXtBlock(ch_in=dims[0], ch_out=dims[1], depth=depths[1], k=kernels[1])
@@ -120,15 +124,15 @@ class CMUNeXt(nn.Module):
     def forward(self, x):
         x1 = self.stem(x)
         x1 = self.encoder1(x1)
-        x2 = self.Maxpool(x1)
+        x2 = self.pool1(x1)
         x2 = self.encoder2(x2)
-        x3 = self.Maxpool(x2)
+        x3 = self.pool2(x2)
         x3 = self.encoder3(x3)
-        x4 = self.Maxpool(x3)
+        x4 = self.pool3(x3) 
         x4 = self.encoder4(x4)
-        x5 = self.Maxpool(x4)
+        x5 = self.pool4(x4) 
         x5 = self.encoder5(x5)
-
+        # Decoder Path 
         d5 = self.Up5(x5)
         d5 = torch.cat((x4, d5), dim=1)
         d5 = self.Up_conv5(d5)

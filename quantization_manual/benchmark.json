@@ -1,0 +1,13 @@
+{
+    "num_cases": 234,
+    "checkpoint": "/home/ree/CMUNeXt/checkpoint/CMUNeXt_model_busi_train.pth",
+    "loss": 1.1421981138041897,
+    "iou": 0.14957265402927064,
+    "dice": 0.14957265848589166,
+    "F1": 0.0,
+    "accuracy": 0.7702861035990919,
+    "sensitivity": 0.0,
+    "precision": 0.0,
+    "specificity": 0.8504273504127954,
+    "inference_time_sec": 0.026390370123439595
+}
