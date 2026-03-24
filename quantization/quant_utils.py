@@ -4,6 +4,7 @@ import sys
 import cv2
 import numpy as np
 import torch
+import albumentations as A
 
 # Ensure project root (containing the `network` package) is on sys.path
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -11,9 +12,6 @@ if PROJECT_ROOT not in sys.path:
 	sys.path.insert(0, PROJECT_ROOT)
 
 from network.CMUNeXt import cmunext
-from albumentations.augmentations import transforms
-from albumentations.core.composition import Compose
-from albumentations import Resize
 
 
 def get_device() -> torch.device:
@@ -41,10 +39,10 @@ def preprocess(image: np.ndarray, mask: np.ndarray):
 	"""Apply the same preprocessing used during training/validation."""
 
 	img_size = 256
-	transform = Compose(
+	transform = A.Compose(
 		[
-			Resize(img_size, img_size),
-			transforms.Normalize(),
+			A.Resize(img_size, img_size),
+			A.Normalize(),
 		]
 	)
 

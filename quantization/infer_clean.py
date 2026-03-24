@@ -71,12 +71,14 @@ def run_inference_once() -> None:
 	image_t = torch.from_numpy(image_np).unsqueeze(0).to(device)  # 1,C,H,W
 	mask_t = torch.from_numpy(mask_np).unsqueeze(0).to(device)    # 1,C,H,W
 
-	# Run inference on GPU and time it
-	torch.cuda.synchronize(device)
+	# Run inference on GPU/CPU and time it
+	if device.type == "cuda":
+		torch.cuda.synchronize(device)
 	start = time.perf_counter()
 	with torch.no_grad():
 		output = model(image_t)
-	torch.cuda.synchronize(device)
+	if device.type == "cuda":
+		torch.cuda.synchronize(device)
 	end = time.perf_counter()
 
 	inference_time = end - start

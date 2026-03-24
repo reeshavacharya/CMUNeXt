@@ -1,0 +1,12 @@
+{
+    "image_name": "benign (331).png",
+    "loss": 2.6605077883288045e+17,
+    "iou": 8.613264353029593e-09,
+    "dice": 1.7226528557682543e-08,
+    "F1": 0.0,
+    "accuracy": 0.9822845458984375,
+    "sensitivity": 0.0,
+    "precision": 0.0,
+    "specificity": 0.9998757435813821,
+    "inference_time_sec": 0.15855438204016536
+}

@@ -1,13 +1,13 @@
 {
-    "image_name": "normal (36).png",
+    "image_name": "benign (391).png",
     "checkpoint": "/home/ree/CMUNeXt/checkpoint/CMUNeXt_model_busi_train.pth",
-    "loss": 1.0001962184906006,
-    "iou": 1.0,
-    "dice": 1.0,
+    "loss": 36.01071548461914,
+    "iou": 1.1258725499596122e-09,
+    "dice": 2.2517450973840466e-09,
     "F1": 0.0,
-    "accuracy": 0.0,
+    "accuracy": 0.864471435546875,
     "sensitivity": 0.0,
     "precision": 0.0,
-    "specificity": 0.0,
-    "inference_time_sec": 0.15508222599964938
+    "specificity": 0.999999999982349,
+    "inference_time_sec": 0.09761713701300323
 }
