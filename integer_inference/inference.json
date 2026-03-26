@@ -1,13 +1,13 @@
 {
-    "image_name": "malignant (89).png",
+    "image_name": "malignant (113).png",
     "checkpoint": "/home/ree/CMUNeXt/checkpoint/CMUNeXt_model_busi_train.pth",
-    "loss": 0.9651022553443909,
-    "iou": 0.2905876171351468,
-    "dice": 0.45031830970173836,
-    "F1": 0.450317956830502,
-    "accuracy": 0.8353118896484375,
-    "sensitivity": 0.2917381549233378,
-    "precision": 0.9866101314468622,
-    "specificity": 0.9988090984677304,
-    "inference_time_sec": 0.15885486104525626
+    "loss": 0.44201719760894775,
+    "iou": 0.48304513927005366,
+    "dice": 0.6514233808254896,
+    "F1": 0.6514228811765476,
+    "accuracy": 0.964874267578125,
+    "sensitivity": 0.6165090281981918,
+    "precision": 0.6905296948023982,
+    "specificity": 0.9844633906396044,
+    "inference_time_sec": 0.007935864967294037
 }
