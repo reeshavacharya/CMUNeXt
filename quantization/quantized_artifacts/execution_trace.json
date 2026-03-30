@@ -1,0 +1,2877 @@
+[
+  {
+    "execution_index": 0,
+    "input_shapes": [
+      [
+        1,
+        3,
+        256,
+        256
+      ]
+    ],
+    "input_tensor_names": [
+      "input"
+    ],
+    "op_name": "stem.conv.0",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      16,
+      256,
+      256
+    ],
+    "output_tensor_name": "stem.conv.0:out"
+  },
+  {
+    "execution_index": 1,
+    "input_shapes": [
+      [
+        1,
+        16,
+        256,
+        256
+      ]
+    ],
+    "input_tensor_names": [
+      "stem.conv.0:out"
+    ],
+    "op_name": "encoder1.block.0.0.fn.0",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      16,
+      256,
+      256
+    ],
+    "output_tensor_name": "encoder1.block.0.0.fn.0:out"
+  },
+  {
+    "execution_index": 2,
+    "input_shapes": [
+      [
+        1,
+        16,
+        256,
+        256
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder1.block.0.0.fn.0:out"
+    ],
+    "op_name": "encoder1.block.0.0.fn.1",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      16,
+      256,
+      256
+    ],
+    "output_tensor_name": "encoder1.block.0.0.fn.1:out"
+  },
+  {
+    "execution_index": 3,
+    "input_shapes": [
+      [
+        1,
+        16,
+        256,
+        256
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder1.block.0.0.fn.1:out"
+    ],
+    "op_name": "encoder1.block.0.0.fn.2",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      16,
+      256,
+      256
+    ],
+    "output_tensor_name": "encoder1.block.0.0.fn.2:out"
+  },
+  {
+    "execution_index": 4,
+    "input_shapes": [
+      [
+        1,
+        16,
+        256,
+        256
+      ]
+    ],
+    "input_tensor_names": [
+      "stem.conv.0:out"
+    ],
+    "op_name": "encoder1.block.0.0",
+    "op_type": "Residual",
+    "output_shape": [
+      1,
+      16,
+      256,
+      256
+    ],
+    "output_tensor_name": "encoder1.block.0.0:out"
+  },
+  {
+    "execution_index": 5,
+    "input_shapes": [
+      [
+        1,
+        16,
+        256,
+        256
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder1.block.0.0:out"
+    ],
+    "op_name": "encoder1.block.0.1",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      64,
+      256,
+      256
+    ],
+    "output_tensor_name": "encoder1.block.0.1:out"
+  },
+  {
+    "execution_index": 6,
+    "input_shapes": [
+      [
+        1,
+        64,
+        256,
+        256
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder1.block.0.1:out"
+    ],
+    "op_name": "encoder1.block.0.2",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      64,
+      256,
+      256
+    ],
+    "output_tensor_name": "encoder1.block.0.2:out"
+  },
+  {
+    "execution_index": 7,
+    "input_shapes": [
+      [
+        1,
+        64,
+        256,
+        256
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder1.block.0.2:out"
+    ],
+    "op_name": "encoder1.block.0.3",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      64,
+      256,
+      256
+    ],
+    "output_tensor_name": "encoder1.block.0.3:out"
+  },
+  {
+    "execution_index": 8,
+    "input_shapes": [
+      [
+        1,
+        64,
+        256,
+        256
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder1.block.0.3:out"
+    ],
+    "op_name": "encoder1.block.0.4",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      16,
+      256,
+      256
+    ],
+    "output_tensor_name": "encoder1.block.0.4:out"
+  },
+  {
+    "execution_index": 9,
+    "input_shapes": [
+      [
+        1,
+        16,
+        256,
+        256
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder1.block.0.4:out"
+    ],
+    "op_name": "encoder1.block.0.5",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      16,
+      256,
+      256
+    ],
+    "output_tensor_name": "encoder1.block.0.5:out"
+  },
+  {
+    "execution_index": 10,
+    "input_shapes": [
+      [
+        1,
+        16,
+        256,
+        256
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder1.block.0.5:out"
+    ],
+    "op_name": "encoder1.block.0.6",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      16,
+      256,
+      256
+    ],
+    "output_tensor_name": "encoder1.block.0.6:out"
+  },
+  {
+    "execution_index": 11,
+    "input_shapes": [
+      [
+        1,
+        16,
+        256,
+        256
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder1.block.0.6:out"
+    ],
+    "op_name": "encoder1.up.conv.0",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      16,
+      256,
+      256
+    ],
+    "output_tensor_name": "encoder1.up.conv.0:out"
+  },
+  {
+    "execution_index": 12,
+    "input_shapes": [
+      [
+        1,
+        16,
+        256,
+        256
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder1.up.conv.0:out"
+    ],
+    "op_name": "Maxpool",
+    "op_type": "MaxPool2d",
+    "output_shape": [
+      1,
+      16,
+      128,
+      128
+    ],
+    "output_tensor_name": "Maxpool:out"
+  },
+  {
+    "execution_index": 13,
+    "input_shapes": [
+      [
+        1,
+        16,
+        128,
+        128
+      ]
+    ],
+    "input_tensor_names": [
+      "Maxpool:out"
+    ],
+    "op_name": "encoder2.block.0.0.fn.0",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      16,
+      128,
+      128
+    ],
+    "output_tensor_name": "encoder2.block.0.0.fn.0:out"
+  },
+  {
+    "execution_index": 14,
+    "input_shapes": [
+      [
+        1,
+        16,
+        128,
+        128
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder2.block.0.0.fn.0:out"
+    ],
+    "op_name": "encoder2.block.0.0.fn.1",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      16,
+      128,
+      128
+    ],
+    "output_tensor_name": "encoder2.block.0.0.fn.1:out"
+  },
+  {
+    "execution_index": 15,
+    "input_shapes": [
+      [
+        1,
+        16,
+        128,
+        128
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder2.block.0.0.fn.1:out"
+    ],
+    "op_name": "encoder2.block.0.0.fn.2",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      16,
+      128,
+      128
+    ],
+    "output_tensor_name": "encoder2.block.0.0.fn.2:out"
+  },
+  {
+    "execution_index": 16,
+    "input_shapes": [
+      [
+        1,
+        16,
+        128,
+        128
+      ]
+    ],
+    "input_tensor_names": [
+      "Maxpool:out"
+    ],
+    "op_name": "encoder2.block.0.0",
+    "op_type": "Residual",
+    "output_shape": [
+      1,
+      16,
+      128,
+      128
+    ],
+    "output_tensor_name": "encoder2.block.0.0:out"
+  },
+  {
+    "execution_index": 17,
+    "input_shapes": [
+      [
+        1,
+        16,
+        128,
+        128
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder2.block.0.0:out"
+    ],
+    "op_name": "encoder2.block.0.1",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      64,
+      128,
+      128
+    ],
+    "output_tensor_name": "encoder2.block.0.1:out"
+  },
+  {
+    "execution_index": 18,
+    "input_shapes": [
+      [
+        1,
+        64,
+        128,
+        128
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder2.block.0.1:out"
+    ],
+    "op_name": "encoder2.block.0.2",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      64,
+      128,
+      128
+    ],
+    "output_tensor_name": "encoder2.block.0.2:out"
+  },
+  {
+    "execution_index": 19,
+    "input_shapes": [
+      [
+        1,
+        64,
+        128,
+        128
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder2.block.0.2:out"
+    ],
+    "op_name": "encoder2.block.0.3",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      64,
+      128,
+      128
+    ],
+    "output_tensor_name": "encoder2.block.0.3:out"
+  },
+  {
+    "execution_index": 20,
+    "input_shapes": [
+      [
+        1,
+        64,
+        128,
+        128
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder2.block.0.3:out"
+    ],
+    "op_name": "encoder2.block.0.4",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      16,
+      128,
+      128
+    ],
+    "output_tensor_name": "encoder2.block.0.4:out"
+  },
+  {
+    "execution_index": 21,
+    "input_shapes": [
+      [
+        1,
+        16,
+        128,
+        128
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder2.block.0.4:out"
+    ],
+    "op_name": "encoder2.block.0.5",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      16,
+      128,
+      128
+    ],
+    "output_tensor_name": "encoder2.block.0.5:out"
+  },
+  {
+    "execution_index": 22,
+    "input_shapes": [
+      [
+        1,
+        16,
+        128,
+        128
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder2.block.0.5:out"
+    ],
+    "op_name": "encoder2.block.0.6",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      16,
+      128,
+      128
+    ],
+    "output_tensor_name": "encoder2.block.0.6:out"
+  },
+  {
+    "execution_index": 23,
+    "input_shapes": [
+      [
+        1,
+        16,
+        128,
+        128
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder2.block.0.6:out"
+    ],
+    "op_name": "encoder2.up.conv.0",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      32,
+      128,
+      128
+    ],
+    "output_tensor_name": "encoder2.up.conv.0:out"
+  },
+  {
+    "execution_index": 24,
+    "input_shapes": [
+      [
+        1,
+        32,
+        128,
+        128
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder2.up.conv.0:out"
+    ],
+    "op_name": "Maxpool",
+    "op_type": "MaxPool2d",
+    "output_shape": [
+      1,
+      32,
+      64,
+      64
+    ],
+    "output_tensor_name": "Maxpool:out"
+  },
+  {
+    "execution_index": 25,
+    "input_shapes": [
+      [
+        1,
+        32,
+        64,
+        64
+      ]
+    ],
+    "input_tensor_names": [
+      "Maxpool:out"
+    ],
+    "op_name": "encoder3.block.0.0.fn.0",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      32,
+      64,
+      64
+    ],
+    "output_tensor_name": "encoder3.block.0.0.fn.0:out"
+  },
+  {
+    "execution_index": 26,
+    "input_shapes": [
+      [
+        1,
+        32,
+        64,
+        64
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder3.block.0.0.fn.0:out"
+    ],
+    "op_name": "encoder3.block.0.0.fn.1",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      32,
+      64,
+      64
+    ],
+    "output_tensor_name": "encoder3.block.0.0.fn.1:out"
+  },
+  {
+    "execution_index": 27,
+    "input_shapes": [
+      [
+        1,
+        32,
+        64,
+        64
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder3.block.0.0.fn.1:out"
+    ],
+    "op_name": "encoder3.block.0.0.fn.2",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      32,
+      64,
+      64
+    ],
+    "output_tensor_name": "encoder3.block.0.0.fn.2:out"
+  },
+  {
+    "execution_index": 28,
+    "input_shapes": [
+      [
+        1,
+        32,
+        64,
+        64
+      ]
+    ],
+    "input_tensor_names": [
+      "Maxpool:out"
+    ],
+    "op_name": "encoder3.block.0.0",
+    "op_type": "Residual",
+    "output_shape": [
+      1,
+      32,
+      64,
+      64
+    ],
+    "output_tensor_name": "encoder3.block.0.0:out"
+  },
+  {
+    "execution_index": 29,
+    "input_shapes": [
+      [
+        1,
+        32,
+        64,
+        64
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder3.block.0.0:out"
+    ],
+    "op_name": "encoder3.block.0.1",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      128,
+      64,
+      64
+    ],
+    "output_tensor_name": "encoder3.block.0.1:out"
+  },
+  {
+    "execution_index": 30,
+    "input_shapes": [
+      [
+        1,
+        128,
+        64,
+        64
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder3.block.0.1:out"
+    ],
+    "op_name": "encoder3.block.0.2",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      128,
+      64,
+      64
+    ],
+    "output_tensor_name": "encoder3.block.0.2:out"
+  },
+  {
+    "execution_index": 31,
+    "input_shapes": [
+      [
+        1,
+        128,
+        64,
+        64
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder3.block.0.2:out"
+    ],
+    "op_name": "encoder3.block.0.3",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      128,
+      64,
+      64
+    ],
+    "output_tensor_name": "encoder3.block.0.3:out"
+  },
+  {
+    "execution_index": 32,
+    "input_shapes": [
+      [
+        1,
+        128,
+        64,
+        64
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder3.block.0.3:out"
+    ],
+    "op_name": "encoder3.block.0.4",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      32,
+      64,
+      64
+    ],
+    "output_tensor_name": "encoder3.block.0.4:out"
+  },
+  {
+    "execution_index": 33,
+    "input_shapes": [
+      [
+        1,
+        32,
+        64,
+        64
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder3.block.0.4:out"
+    ],
+    "op_name": "encoder3.block.0.5",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      32,
+      64,
+      64
+    ],
+    "output_tensor_name": "encoder3.block.0.5:out"
+  },
+  {
+    "execution_index": 34,
+    "input_shapes": [
+      [
+        1,
+        32,
+        64,
+        64
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder3.block.0.5:out"
+    ],
+    "op_name": "encoder3.block.0.6",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      32,
+      64,
+      64
+    ],
+    "output_tensor_name": "encoder3.block.0.6:out"
+  },
+  {
+    "execution_index": 35,
+    "input_shapes": [
+      [
+        1,
+        32,
+        64,
+        64
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder3.block.0.6:out"
+    ],
+    "op_name": "encoder3.up.conv.0",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      128,
+      64,
+      64
+    ],
+    "output_tensor_name": "encoder3.up.conv.0:out"
+  },
+  {
+    "execution_index": 36,
+    "input_shapes": [
+      [
+        1,
+        128,
+        64,
+        64
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder3.up.conv.0:out"
+    ],
+    "op_name": "Maxpool",
+    "op_type": "MaxPool2d",
+    "output_shape": [
+      1,
+      128,
+      32,
+      32
+    ],
+    "output_tensor_name": "Maxpool:out"
+  },
+  {
+    "execution_index": 37,
+    "input_shapes": [
+      [
+        1,
+        128,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "Maxpool:out"
+    ],
+    "op_name": "encoder4.block.0.0.fn.0",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      128,
+      32,
+      32
+    ],
+    "output_tensor_name": "encoder4.block.0.0.fn.0:out"
+  },
+  {
+    "execution_index": 38,
+    "input_shapes": [
+      [
+        1,
+        128,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder4.block.0.0.fn.0:out"
+    ],
+    "op_name": "encoder4.block.0.0.fn.1",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      128,
+      32,
+      32
+    ],
+    "output_tensor_name": "encoder4.block.0.0.fn.1:out"
+  },
+  {
+    "execution_index": 39,
+    "input_shapes": [
+      [
+        1,
+        128,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder4.block.0.0.fn.1:out"
+    ],
+    "op_name": "encoder4.block.0.0.fn.2",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      128,
+      32,
+      32
+    ],
+    "output_tensor_name": "encoder4.block.0.0.fn.2:out"
+  },
+  {
+    "execution_index": 40,
+    "input_shapes": [
+      [
+        1,
+        128,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "Maxpool:out"
+    ],
+    "op_name": "encoder4.block.0.0",
+    "op_type": "Residual",
+    "output_shape": [
+      1,
+      128,
+      32,
+      32
+    ],
+    "output_tensor_name": "encoder4.block.0.0:out"
+  },
+  {
+    "execution_index": 41,
+    "input_shapes": [
+      [
+        1,
+        128,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder4.block.0.0:out"
+    ],
+    "op_name": "encoder4.block.0.1",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      512,
+      32,
+      32
+    ],
+    "output_tensor_name": "encoder4.block.0.1:out"
+  },
+  {
+    "execution_index": 42,
+    "input_shapes": [
+      [
+        1,
+        512,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder4.block.0.1:out"
+    ],
+    "op_name": "encoder4.block.0.2",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      512,
+      32,
+      32
+    ],
+    "output_tensor_name": "encoder4.block.0.2:out"
+  },
+  {
+    "execution_index": 43,
+    "input_shapes": [
+      [
+        1,
+        512,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder4.block.0.2:out"
+    ],
+    "op_name": "encoder4.block.0.3",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      512,
+      32,
+      32
+    ],
+    "output_tensor_name": "encoder4.block.0.3:out"
+  },
+  {
+    "execution_index": 44,
+    "input_shapes": [
+      [
+        1,
+        512,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder4.block.0.3:out"
+    ],
+    "op_name": "encoder4.block.0.4",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      128,
+      32,
+      32
+    ],
+    "output_tensor_name": "encoder4.block.0.4:out"
+  },
+  {
+    "execution_index": 45,
+    "input_shapes": [
+      [
+        1,
+        128,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder4.block.0.4:out"
+    ],
+    "op_name": "encoder4.block.0.5",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      128,
+      32,
+      32
+    ],
+    "output_tensor_name": "encoder4.block.0.5:out"
+  },
+  {
+    "execution_index": 46,
+    "input_shapes": [
+      [
+        1,
+        128,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder4.block.0.5:out"
+    ],
+    "op_name": "encoder4.block.0.6",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      128,
+      32,
+      32
+    ],
+    "output_tensor_name": "encoder4.block.0.6:out"
+  },
+  {
+    "execution_index": 47,
+    "input_shapes": [
+      [
+        1,
+        128,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder4.block.0.6:out"
+    ],
+    "op_name": "encoder4.block.1.0.fn.0",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      128,
+      32,
+      32
+    ],
+    "output_tensor_name": "encoder4.block.1.0.fn.0:out"
+  },
+  {
+    "execution_index": 48,
+    "input_shapes": [
+      [
+        1,
+        128,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder4.block.1.0.fn.0:out"
+    ],
+    "op_name": "encoder4.block.1.0.fn.1",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      128,
+      32,
+      32
+    ],
+    "output_tensor_name": "encoder4.block.1.0.fn.1:out"
+  },
+  {
+    "execution_index": 49,
+    "input_shapes": [
+      [
+        1,
+        128,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder4.block.1.0.fn.1:out"
+    ],
+    "op_name": "encoder4.block.1.0.fn.2",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      128,
+      32,
+      32
+    ],
+    "output_tensor_name": "encoder4.block.1.0.fn.2:out"
+  },
+  {
+    "execution_index": 50,
+    "input_shapes": [
+      [
+        1,
+        128,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder4.block.0.6:out"
+    ],
+    "op_name": "encoder4.block.1.0",
+    "op_type": "Residual",
+    "output_shape": [
+      1,
+      128,
+      32,
+      32
+    ],
+    "output_tensor_name": "encoder4.block.1.0:out"
+  },
+  {
+    "execution_index": 51,
+    "input_shapes": [
+      [
+        1,
+        128,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder4.block.1.0:out"
+    ],
+    "op_name": "encoder4.block.1.1",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      512,
+      32,
+      32
+    ],
+    "output_tensor_name": "encoder4.block.1.1:out"
+  },
+  {
+    "execution_index": 52,
+    "input_shapes": [
+      [
+        1,
+        512,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder4.block.1.1:out"
+    ],
+    "op_name": "encoder4.block.1.2",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      512,
+      32,
+      32
+    ],
+    "output_tensor_name": "encoder4.block.1.2:out"
+  },
+  {
+    "execution_index": 53,
+    "input_shapes": [
+      [
+        1,
+        512,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder4.block.1.2:out"
+    ],
+    "op_name": "encoder4.block.1.3",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      512,
+      32,
+      32
+    ],
+    "output_tensor_name": "encoder4.block.1.3:out"
+  },
+  {
+    "execution_index": 54,
+    "input_shapes": [
+      [
+        1,
+        512,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder4.block.1.3:out"
+    ],
+    "op_name": "encoder4.block.1.4",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      128,
+      32,
+      32
+    ],
+    "output_tensor_name": "encoder4.block.1.4:out"
+  },
+  {
+    "execution_index": 55,
+    "input_shapes": [
+      [
+        1,
+        128,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder4.block.1.4:out"
+    ],
+    "op_name": "encoder4.block.1.5",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      128,
+      32,
+      32
+    ],
+    "output_tensor_name": "encoder4.block.1.5:out"
+  },
+  {
+    "execution_index": 56,
+    "input_shapes": [
+      [
+        1,
+        128,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder4.block.1.5:out"
+    ],
+    "op_name": "encoder4.block.1.6",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      128,
+      32,
+      32
+    ],
+    "output_tensor_name": "encoder4.block.1.6:out"
+  },
+  {
+    "execution_index": 57,
+    "input_shapes": [
+      [
+        1,
+        128,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder4.block.1.6:out"
+    ],
+    "op_name": "encoder4.block.2.0.fn.0",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      128,
+      32,
+      32
+    ],
+    "output_tensor_name": "encoder4.block.2.0.fn.0:out"
+  },
+  {
+    "execution_index": 58,
+    "input_shapes": [
+      [
+        1,
+        128,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder4.block.2.0.fn.0:out"
+    ],
+    "op_name": "encoder4.block.2.0.fn.1",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      128,
+      32,
+      32
+    ],
+    "output_tensor_name": "encoder4.block.2.0.fn.1:out"
+  },
+  {
+    "execution_index": 59,
+    "input_shapes": [
+      [
+        1,
+        128,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder4.block.2.0.fn.1:out"
+    ],
+    "op_name": "encoder4.block.2.0.fn.2",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      128,
+      32,
+      32
+    ],
+    "output_tensor_name": "encoder4.block.2.0.fn.2:out"
+  },
+  {
+    "execution_index": 60,
+    "input_shapes": [
+      [
+        1,
+        128,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder4.block.1.6:out"
+    ],
+    "op_name": "encoder4.block.2.0",
+    "op_type": "Residual",
+    "output_shape": [
+      1,
+      128,
+      32,
+      32
+    ],
+    "output_tensor_name": "encoder4.block.2.0:out"
+  },
+  {
+    "execution_index": 61,
+    "input_shapes": [
+      [
+        1,
+        128,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder4.block.2.0:out"
+    ],
+    "op_name": "encoder4.block.2.1",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      512,
+      32,
+      32
+    ],
+    "output_tensor_name": "encoder4.block.2.1:out"
+  },
+  {
+    "execution_index": 62,
+    "input_shapes": [
+      [
+        1,
+        512,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder4.block.2.1:out"
+    ],
+    "op_name": "encoder4.block.2.2",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      512,
+      32,
+      32
+    ],
+    "output_tensor_name": "encoder4.block.2.2:out"
+  },
+  {
+    "execution_index": 63,
+    "input_shapes": [
+      [
+        1,
+        512,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder4.block.2.2:out"
+    ],
+    "op_name": "encoder4.block.2.3",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      512,
+      32,
+      32
+    ],
+    "output_tensor_name": "encoder4.block.2.3:out"
+  },
+  {
+    "execution_index": 64,
+    "input_shapes": [
+      [
+        1,
+        512,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder4.block.2.3:out"
+    ],
+    "op_name": "encoder4.block.2.4",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      128,
+      32,
+      32
+    ],
+    "output_tensor_name": "encoder4.block.2.4:out"
+  },
+  {
+    "execution_index": 65,
+    "input_shapes": [
+      [
+        1,
+        128,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder4.block.2.4:out"
+    ],
+    "op_name": "encoder4.block.2.5",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      128,
+      32,
+      32
+    ],
+    "output_tensor_name": "encoder4.block.2.5:out"
+  },
+  {
+    "execution_index": 66,
+    "input_shapes": [
+      [
+        1,
+        128,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder4.block.2.5:out"
+    ],
+    "op_name": "encoder4.block.2.6",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      128,
+      32,
+      32
+    ],
+    "output_tensor_name": "encoder4.block.2.6:out"
+  },
+  {
+    "execution_index": 67,
+    "input_shapes": [
+      [
+        1,
+        128,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder4.block.2.6:out"
+    ],
+    "op_name": "encoder4.up.conv.0",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      160,
+      32,
+      32
+    ],
+    "output_tensor_name": "encoder4.up.conv.0:out"
+  },
+  {
+    "execution_index": 68,
+    "input_shapes": [
+      [
+        1,
+        160,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder4.up.conv.0:out"
+    ],
+    "op_name": "Maxpool",
+    "op_type": "MaxPool2d",
+    "output_shape": [
+      1,
+      160,
+      16,
+      16
+    ],
+    "output_tensor_name": "Maxpool:out"
+  },
+  {
+    "execution_index": 69,
+    "input_shapes": [
+      [
+        1,
+        160,
+        16,
+        16
+      ]
+    ],
+    "input_tensor_names": [
+      "Maxpool:out"
+    ],
+    "op_name": "encoder5.block.0.0.fn.0",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      160,
+      16,
+      16
+    ],
+    "output_tensor_name": "encoder5.block.0.0.fn.0:out"
+  },
+  {
+    "execution_index": 70,
+    "input_shapes": [
+      [
+        1,
+        160,
+        16,
+        16
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder5.block.0.0.fn.0:out"
+    ],
+    "op_name": "encoder5.block.0.0.fn.1",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      160,
+      16,
+      16
+    ],
+    "output_tensor_name": "encoder5.block.0.0.fn.1:out"
+  },
+  {
+    "execution_index": 71,
+    "input_shapes": [
+      [
+        1,
+        160,
+        16,
+        16
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder5.block.0.0.fn.1:out"
+    ],
+    "op_name": "encoder5.block.0.0.fn.2",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      160,
+      16,
+      16
+    ],
+    "output_tensor_name": "encoder5.block.0.0.fn.2:out"
+  },
+  {
+    "execution_index": 72,
+    "input_shapes": [
+      [
+        1,
+        160,
+        16,
+        16
+      ]
+    ],
+    "input_tensor_names": [
+      "Maxpool:out"
+    ],
+    "op_name": "encoder5.block.0.0",
+    "op_type": "Residual",
+    "output_shape": [
+      1,
+      160,
+      16,
+      16
+    ],
+    "output_tensor_name": "encoder5.block.0.0:out"
+  },
+  {
+    "execution_index": 73,
+    "input_shapes": [
+      [
+        1,
+        160,
+        16,
+        16
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder5.block.0.0:out"
+    ],
+    "op_name": "encoder5.block.0.1",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      640,
+      16,
+      16
+    ],
+    "output_tensor_name": "encoder5.block.0.1:out"
+  },
+  {
+    "execution_index": 74,
+    "input_shapes": [
+      [
+        1,
+        640,
+        16,
+        16
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder5.block.0.1:out"
+    ],
+    "op_name": "encoder5.block.0.2",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      640,
+      16,
+      16
+    ],
+    "output_tensor_name": "encoder5.block.0.2:out"
+  },
+  {
+    "execution_index": 75,
+    "input_shapes": [
+      [
+        1,
+        640,
+        16,
+        16
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder5.block.0.2:out"
+    ],
+    "op_name": "encoder5.block.0.3",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      640,
+      16,
+      16
+    ],
+    "output_tensor_name": "encoder5.block.0.3:out"
+  },
+  {
+    "execution_index": 76,
+    "input_shapes": [
+      [
+        1,
+        640,
+        16,
+        16
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder5.block.0.3:out"
+    ],
+    "op_name": "encoder5.block.0.4",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      160,
+      16,
+      16
+    ],
+    "output_tensor_name": "encoder5.block.0.4:out"
+  },
+  {
+    "execution_index": 77,
+    "input_shapes": [
+      [
+        1,
+        160,
+        16,
+        16
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder5.block.0.4:out"
+    ],
+    "op_name": "encoder5.block.0.5",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      160,
+      16,
+      16
+    ],
+    "output_tensor_name": "encoder5.block.0.5:out"
+  },
+  {
+    "execution_index": 78,
+    "input_shapes": [
+      [
+        1,
+        160,
+        16,
+        16
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder5.block.0.5:out"
+    ],
+    "op_name": "encoder5.block.0.6",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      160,
+      16,
+      16
+    ],
+    "output_tensor_name": "encoder5.block.0.6:out"
+  },
+  {
+    "execution_index": 79,
+    "input_shapes": [
+      [
+        1,
+        160,
+        16,
+        16
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder5.block.0.6:out"
+    ],
+    "op_name": "encoder5.up.conv.0",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      256,
+      16,
+      16
+    ],
+    "output_tensor_name": "encoder5.up.conv.0:out"
+  },
+  {
+    "execution_index": 80,
+    "input_shapes": [
+      [
+        1,
+        256,
+        16,
+        16
+      ]
+    ],
+    "input_tensor_names": [
+      "encoder5.up.conv.0:out"
+    ],
+    "op_name": "Up5.up.0",
+    "op_type": "Upsample",
+    "output_shape": [
+      1,
+      256,
+      32,
+      32
+    ],
+    "output_tensor_name": "Up5.up.0:out"
+  },
+  {
+    "execution_index": 81,
+    "input_shapes": [
+      [
+        1,
+        256,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "Up5.up.0:out"
+    ],
+    "op_name": "Up5.up.1",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      160,
+      32,
+      32
+    ],
+    "output_tensor_name": "Up5.up.1:out"
+  },
+  {
+    "execution_index": 82,
+    "input_shapes": [
+      [
+        1,
+        320,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv5.conv.0:input0"
+    ],
+    "op_name": "Up_conv5.conv.0",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      320,
+      32,
+      32
+    ],
+    "output_tensor_name": "Up_conv5.conv.0:out"
+  },
+  {
+    "execution_index": 83,
+    "input_shapes": [
+      [
+        1,
+        320,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv5.conv.0:out"
+    ],
+    "op_name": "Up_conv5.conv.1",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      320,
+      32,
+      32
+    ],
+    "output_tensor_name": "Up_conv5.conv.1:out"
+  },
+  {
+    "execution_index": 84,
+    "input_shapes": [
+      [
+        1,
+        320,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv5.conv.1:out"
+    ],
+    "op_name": "Up_conv5.conv.2",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      320,
+      32,
+      32
+    ],
+    "output_tensor_name": "Up_conv5.conv.2:out"
+  },
+  {
+    "execution_index": 85,
+    "input_shapes": [
+      [
+        1,
+        320,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv5.conv.2:out"
+    ],
+    "op_name": "Up_conv5.conv.3",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      640,
+      32,
+      32
+    ],
+    "output_tensor_name": "Up_conv5.conv.3:out"
+  },
+  {
+    "execution_index": 86,
+    "input_shapes": [
+      [
+        1,
+        640,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv5.conv.3:out"
+    ],
+    "op_name": "Up_conv5.conv.4",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      640,
+      32,
+      32
+    ],
+    "output_tensor_name": "Up_conv5.conv.4:out"
+  },
+  {
+    "execution_index": 87,
+    "input_shapes": [
+      [
+        1,
+        640,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv5.conv.4:out"
+    ],
+    "op_name": "Up_conv5.conv.5",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      640,
+      32,
+      32
+    ],
+    "output_tensor_name": "Up_conv5.conv.5:out"
+  },
+  {
+    "execution_index": 88,
+    "input_shapes": [
+      [
+        1,
+        640,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv5.conv.5:out"
+    ],
+    "op_name": "Up_conv5.conv.6",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      160,
+      32,
+      32
+    ],
+    "output_tensor_name": "Up_conv5.conv.6:out"
+  },
+  {
+    "execution_index": 89,
+    "input_shapes": [
+      [
+        1,
+        160,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv5.conv.6:out"
+    ],
+    "op_name": "Up_conv5.conv.7",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      160,
+      32,
+      32
+    ],
+    "output_tensor_name": "Up_conv5.conv.7:out"
+  },
+  {
+    "execution_index": 90,
+    "input_shapes": [
+      [
+        1,
+        160,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv5.conv.7:out"
+    ],
+    "op_name": "Up_conv5.conv.8",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      160,
+      32,
+      32
+    ],
+    "output_tensor_name": "Up_conv5.conv.8:out"
+  },
+  {
+    "execution_index": 91,
+    "input_shapes": [
+      [
+        1,
+        160,
+        32,
+        32
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv5.conv.8:out"
+    ],
+    "op_name": "Up4.up.0",
+    "op_type": "Upsample",
+    "output_shape": [
+      1,
+      160,
+      64,
+      64
+    ],
+    "output_tensor_name": "Up4.up.0:out"
+  },
+  {
+    "execution_index": 92,
+    "input_shapes": [
+      [
+        1,
+        160,
+        64,
+        64
+      ]
+    ],
+    "input_tensor_names": [
+      "Up4.up.0:out"
+    ],
+    "op_name": "Up4.up.1",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      128,
+      64,
+      64
+    ],
+    "output_tensor_name": "Up4.up.1:out"
+  },
+  {
+    "execution_index": 93,
+    "input_shapes": [
+      [
+        1,
+        256,
+        64,
+        64
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv4.conv.0:input0"
+    ],
+    "op_name": "Up_conv4.conv.0",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      256,
+      64,
+      64
+    ],
+    "output_tensor_name": "Up_conv4.conv.0:out"
+  },
+  {
+    "execution_index": 94,
+    "input_shapes": [
+      [
+        1,
+        256,
+        64,
+        64
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv4.conv.0:out"
+    ],
+    "op_name": "Up_conv4.conv.1",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      256,
+      64,
+      64
+    ],
+    "output_tensor_name": "Up_conv4.conv.1:out"
+  },
+  {
+    "execution_index": 95,
+    "input_shapes": [
+      [
+        1,
+        256,
+        64,
+        64
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv4.conv.1:out"
+    ],
+    "op_name": "Up_conv4.conv.2",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      256,
+      64,
+      64
+    ],
+    "output_tensor_name": "Up_conv4.conv.2:out"
+  },
+  {
+    "execution_index": 96,
+    "input_shapes": [
+      [
+        1,
+        256,
+        64,
+        64
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv4.conv.2:out"
+    ],
+    "op_name": "Up_conv4.conv.3",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      512,
+      64,
+      64
+    ],
+    "output_tensor_name": "Up_conv4.conv.3:out"
+  },
+  {
+    "execution_index": 97,
+    "input_shapes": [
+      [
+        1,
+        512,
+        64,
+        64
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv4.conv.3:out"
+    ],
+    "op_name": "Up_conv4.conv.4",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      512,
+      64,
+      64
+    ],
+    "output_tensor_name": "Up_conv4.conv.4:out"
+  },
+  {
+    "execution_index": 98,
+    "input_shapes": [
+      [
+        1,
+        512,
+        64,
+        64
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv4.conv.4:out"
+    ],
+    "op_name": "Up_conv4.conv.5",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      512,
+      64,
+      64
+    ],
+    "output_tensor_name": "Up_conv4.conv.5:out"
+  },
+  {
+    "execution_index": 99,
+    "input_shapes": [
+      [
+        1,
+        512,
+        64,
+        64
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv4.conv.5:out"
+    ],
+    "op_name": "Up_conv4.conv.6",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      128,
+      64,
+      64
+    ],
+    "output_tensor_name": "Up_conv4.conv.6:out"
+  },
+  {
+    "execution_index": 100,
+    "input_shapes": [
+      [
+        1,
+        128,
+        64,
+        64
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv4.conv.6:out"
+    ],
+    "op_name": "Up_conv4.conv.7",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      128,
+      64,
+      64
+    ],
+    "output_tensor_name": "Up_conv4.conv.7:out"
+  },
+  {
+    "execution_index": 101,
+    "input_shapes": [
+      [
+        1,
+        128,
+        64,
+        64
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv4.conv.7:out"
+    ],
+    "op_name": "Up_conv4.conv.8",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      128,
+      64,
+      64
+    ],
+    "output_tensor_name": "Up_conv4.conv.8:out"
+  },
+  {
+    "execution_index": 102,
+    "input_shapes": [
+      [
+        1,
+        128,
+        64,
+        64
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv4.conv.8:out"
+    ],
+    "op_name": "Up3.up.0",
+    "op_type": "Upsample",
+    "output_shape": [
+      1,
+      128,
+      128,
+      128
+    ],
+    "output_tensor_name": "Up3.up.0:out"
+  },
+  {
+    "execution_index": 103,
+    "input_shapes": [
+      [
+        1,
+        128,
+        128,
+        128
+      ]
+    ],
+    "input_tensor_names": [
+      "Up3.up.0:out"
+    ],
+    "op_name": "Up3.up.1",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      32,
+      128,
+      128
+    ],
+    "output_tensor_name": "Up3.up.1:out"
+  },
+  {
+    "execution_index": 104,
+    "input_shapes": [
+      [
+        1,
+        64,
+        128,
+        128
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv3.conv.0:input0"
+    ],
+    "op_name": "Up_conv3.conv.0",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      64,
+      128,
+      128
+    ],
+    "output_tensor_name": "Up_conv3.conv.0:out"
+  },
+  {
+    "execution_index": 105,
+    "input_shapes": [
+      [
+        1,
+        64,
+        128,
+        128
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv3.conv.0:out"
+    ],
+    "op_name": "Up_conv3.conv.1",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      64,
+      128,
+      128
+    ],
+    "output_tensor_name": "Up_conv3.conv.1:out"
+  },
+  {
+    "execution_index": 106,
+    "input_shapes": [
+      [
+        1,
+        64,
+        128,
+        128
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv3.conv.1:out"
+    ],
+    "op_name": "Up_conv3.conv.2",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      64,
+      128,
+      128
+    ],
+    "output_tensor_name": "Up_conv3.conv.2:out"
+  },
+  {
+    "execution_index": 107,
+    "input_shapes": [
+      [
+        1,
+        64,
+        128,
+        128
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv3.conv.2:out"
+    ],
+    "op_name": "Up_conv3.conv.3",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      128,
+      128,
+      128
+    ],
+    "output_tensor_name": "Up_conv3.conv.3:out"
+  },
+  {
+    "execution_index": 108,
+    "input_shapes": [
+      [
+        1,
+        128,
+        128,
+        128
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv3.conv.3:out"
+    ],
+    "op_name": "Up_conv3.conv.4",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      128,
+      128,
+      128
+    ],
+    "output_tensor_name": "Up_conv3.conv.4:out"
+  },
+  {
+    "execution_index": 109,
+    "input_shapes": [
+      [
+        1,
+        128,
+        128,
+        128
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv3.conv.4:out"
+    ],
+    "op_name": "Up_conv3.conv.5",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      128,
+      128,
+      128
+    ],
+    "output_tensor_name": "Up_conv3.conv.5:out"
+  },
+  {
+    "execution_index": 110,
+    "input_shapes": [
+      [
+        1,
+        128,
+        128,
+        128
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv3.conv.5:out"
+    ],
+    "op_name": "Up_conv3.conv.6",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      32,
+      128,
+      128
+    ],
+    "output_tensor_name": "Up_conv3.conv.6:out"
+  },
+  {
+    "execution_index": 111,
+    "input_shapes": [
+      [
+        1,
+        32,
+        128,
+        128
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv3.conv.6:out"
+    ],
+    "op_name": "Up_conv3.conv.7",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      32,
+      128,
+      128
+    ],
+    "output_tensor_name": "Up_conv3.conv.7:out"
+  },
+  {
+    "execution_index": 112,
+    "input_shapes": [
+      [
+        1,
+        32,
+        128,
+        128
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv3.conv.7:out"
+    ],
+    "op_name": "Up_conv3.conv.8",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      32,
+      128,
+      128
+    ],
+    "output_tensor_name": "Up_conv3.conv.8:out"
+  },
+  {
+    "execution_index": 113,
+    "input_shapes": [
+      [
+        1,
+        32,
+        128,
+        128
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv3.conv.8:out"
+    ],
+    "op_name": "Up2.up.0",
+    "op_type": "Upsample",
+    "output_shape": [
+      1,
+      32,
+      256,
+      256
+    ],
+    "output_tensor_name": "Up2.up.0:out"
+  },
+  {
+    "execution_index": 114,
+    "input_shapes": [
+      [
+        1,
+        32,
+        256,
+        256
+      ]
+    ],
+    "input_tensor_names": [
+      "Up2.up.0:out"
+    ],
+    "op_name": "Up2.up.1",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      16,
+      256,
+      256
+    ],
+    "output_tensor_name": "Up2.up.1:out"
+  },
+  {
+    "execution_index": 115,
+    "input_shapes": [
+      [
+        1,
+        32,
+        256,
+        256
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv2.conv.0:input0"
+    ],
+    "op_name": "Up_conv2.conv.0",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      32,
+      256,
+      256
+    ],
+    "output_tensor_name": "Up_conv2.conv.0:out"
+  },
+  {
+    "execution_index": 116,
+    "input_shapes": [
+      [
+        1,
+        32,
+        256,
+        256
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv2.conv.0:out"
+    ],
+    "op_name": "Up_conv2.conv.1",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      32,
+      256,
+      256
+    ],
+    "output_tensor_name": "Up_conv2.conv.1:out"
+  },
+  {
+    "execution_index": 117,
+    "input_shapes": [
+      [
+        1,
+        32,
+        256,
+        256
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv2.conv.1:out"
+    ],
+    "op_name": "Up_conv2.conv.2",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      32,
+      256,
+      256
+    ],
+    "output_tensor_name": "Up_conv2.conv.2:out"
+  },
+  {
+    "execution_index": 118,
+    "input_shapes": [
+      [
+        1,
+        32,
+        256,
+        256
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv2.conv.2:out"
+    ],
+    "op_name": "Up_conv2.conv.3",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      64,
+      256,
+      256
+    ],
+    "output_tensor_name": "Up_conv2.conv.3:out"
+  },
+  {
+    "execution_index": 119,
+    "input_shapes": [
+      [
+        1,
+        64,
+        256,
+        256
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv2.conv.3:out"
+    ],
+    "op_name": "Up_conv2.conv.4",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      64,
+      256,
+      256
+    ],
+    "output_tensor_name": "Up_conv2.conv.4:out"
+  },
+  {
+    "execution_index": 120,
+    "input_shapes": [
+      [
+        1,
+        64,
+        256,
+        256
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv2.conv.4:out"
+    ],
+    "op_name": "Up_conv2.conv.5",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      64,
+      256,
+      256
+    ],
+    "output_tensor_name": "Up_conv2.conv.5:out"
+  },
+  {
+    "execution_index": 121,
+    "input_shapes": [
+      [
+        1,
+        64,
+        256,
+        256
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv2.conv.5:out"
+    ],
+    "op_name": "Up_conv2.conv.6",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      16,
+      256,
+      256
+    ],
+    "output_tensor_name": "Up_conv2.conv.6:out"
+  },
+  {
+    "execution_index": 122,
+    "input_shapes": [
+      [
+        1,
+        16,
+        256,
+        256
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv2.conv.6:out"
+    ],
+    "op_name": "Up_conv2.conv.7",
+    "op_type": "GELU",
+    "output_shape": [
+      1,
+      16,
+      256,
+      256
+    ],
+    "output_tensor_name": "Up_conv2.conv.7:out"
+  },
+  {
+    "execution_index": 123,
+    "input_shapes": [
+      [
+        1,
+        16,
+        256,
+        256
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv2.conv.7:out"
+    ],
+    "op_name": "Up_conv2.conv.8",
+    "op_type": "BatchNorm2d",
+    "output_shape": [
+      1,
+      16,
+      256,
+      256
+    ],
+    "output_tensor_name": "Up_conv2.conv.8:out"
+  },
+  {
+    "execution_index": 124,
+    "input_shapes": [
+      [
+        1,
+        16,
+        256,
+        256
+      ]
+    ],
+    "input_tensor_names": [
+      "Up_conv2.conv.8:out"
+    ],
+    "op_name": "Conv_1x1",
+    "op_type": "Conv2d",
+    "output_shape": [
+      1,
+      1,
+      256,
+      256
+    ],
+    "output_tensor_name": "Conv_1x1:out"
+  }
+]

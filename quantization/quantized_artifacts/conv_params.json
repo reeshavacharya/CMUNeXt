@@ -1,0 +1,970 @@
+[
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "input"
+    ],
+    "input_zero_point": -128,
+    "name": "stem.conv.0",
+    "output_tensor_name": "stem.conv.0:out",
+    "padding": [
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 16,
+    "input_tensor_names": [
+      "stem.conv.0:out"
+    ],
+    "input_zero_point": -7,
+    "name": "encoder1.block.0.0.fn.0",
+    "output_tensor_name": "encoder1.block.0.0.fn.0:out",
+    "padding": [
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "encoder1.block.0.0:out"
+    ],
+    "input_zero_point": -128,
+    "name": "encoder1.block.0.1",
+    "output_tensor_name": "encoder1.block.0.1:out",
+    "padding": [
+      0,
+      0
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "encoder1.block.0.3:out"
+    ],
+    "input_zero_point": -128,
+    "name": "encoder1.block.0.4",
+    "output_tensor_name": "encoder1.block.0.4:out",
+    "padding": [
+      0,
+      0
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "encoder1.block.0.6:out"
+    ],
+    "input_zero_point": -128,
+    "name": "encoder1.up.conv.0",
+    "output_tensor_name": "encoder1.up.conv.0:out",
+    "padding": [
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 16,
+    "input_tensor_names": [
+      "Maxpool:out"
+    ],
+    "input_zero_point": -128,
+    "name": "encoder2.block.0.0.fn.0",
+    "output_tensor_name": "encoder2.block.0.0.fn.0:out",
+    "padding": [
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "encoder2.block.0.0:out"
+    ],
+    "input_zero_point": -128,
+    "name": "encoder2.block.0.1",
+    "output_tensor_name": "encoder2.block.0.1:out",
+    "padding": [
+      0,
+      0
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "encoder2.block.0.3:out"
+    ],
+    "input_zero_point": -128,
+    "name": "encoder2.block.0.4",
+    "output_tensor_name": "encoder2.block.0.4:out",
+    "padding": [
+      0,
+      0
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "encoder2.block.0.6:out"
+    ],
+    "input_zero_point": -128,
+    "name": "encoder2.up.conv.0",
+    "output_tensor_name": "encoder2.up.conv.0:out",
+    "padding": [
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 32,
+    "input_tensor_names": [
+      "Maxpool:out"
+    ],
+    "input_zero_point": -128,
+    "name": "encoder3.block.0.0.fn.0",
+    "output_tensor_name": "encoder3.block.0.0.fn.0:out",
+    "padding": [
+      3,
+      3
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "encoder3.block.0.0:out"
+    ],
+    "input_zero_point": -128,
+    "name": "encoder3.block.0.1",
+    "output_tensor_name": "encoder3.block.0.1:out",
+    "padding": [
+      0,
+      0
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "encoder3.block.0.3:out"
+    ],
+    "input_zero_point": -128,
+    "name": "encoder3.block.0.4",
+    "output_tensor_name": "encoder3.block.0.4:out",
+    "padding": [
+      0,
+      0
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "encoder3.block.0.6:out"
+    ],
+    "input_zero_point": -128,
+    "name": "encoder3.up.conv.0",
+    "output_tensor_name": "encoder3.up.conv.0:out",
+    "padding": [
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 128,
+    "input_tensor_names": [
+      "Maxpool:out"
+    ],
+    "input_zero_point": -128,
+    "name": "encoder4.block.0.0.fn.0",
+    "output_tensor_name": "encoder4.block.0.0.fn.0:out",
+    "padding": [
+      3,
+      3
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "encoder4.block.0.0:out"
+    ],
+    "input_zero_point": -128,
+    "name": "encoder4.block.0.1",
+    "output_tensor_name": "encoder4.block.0.1:out",
+    "padding": [
+      0,
+      0
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "encoder4.block.0.3:out"
+    ],
+    "input_zero_point": -128,
+    "name": "encoder4.block.0.4",
+    "output_tensor_name": "encoder4.block.0.4:out",
+    "padding": [
+      0,
+      0
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 128,
+    "input_tensor_names": [
+      "encoder4.block.0.6:out"
+    ],
+    "input_zero_point": -128,
+    "name": "encoder4.block.1.0.fn.0",
+    "output_tensor_name": "encoder4.block.1.0.fn.0:out",
+    "padding": [
+      3,
+      3
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "encoder4.block.1.0:out"
+    ],
+    "input_zero_point": -128,
+    "name": "encoder4.block.1.1",
+    "output_tensor_name": "encoder4.block.1.1:out",
+    "padding": [
+      0,
+      0
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "encoder4.block.1.3:out"
+    ],
+    "input_zero_point": -128,
+    "name": "encoder4.block.1.4",
+    "output_tensor_name": "encoder4.block.1.4:out",
+    "padding": [
+      0,
+      0
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 128,
+    "input_tensor_names": [
+      "encoder4.block.1.6:out"
+    ],
+    "input_zero_point": -128,
+    "name": "encoder4.block.2.0.fn.0",
+    "output_tensor_name": "encoder4.block.2.0.fn.0:out",
+    "padding": [
+      3,
+      3
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "encoder4.block.2.0:out"
+    ],
+    "input_zero_point": -128,
+    "name": "encoder4.block.2.1",
+    "output_tensor_name": "encoder4.block.2.1:out",
+    "padding": [
+      0,
+      0
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "encoder4.block.2.3:out"
+    ],
+    "input_zero_point": -128,
+    "name": "encoder4.block.2.4",
+    "output_tensor_name": "encoder4.block.2.4:out",
+    "padding": [
+      0,
+      0
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "encoder4.block.2.6:out"
+    ],
+    "input_zero_point": -128,
+    "name": "encoder4.up.conv.0",
+    "output_tensor_name": "encoder4.up.conv.0:out",
+    "padding": [
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 160,
+    "input_tensor_names": [
+      "Maxpool:out"
+    ],
+    "input_zero_point": -128,
+    "name": "encoder5.block.0.0.fn.0",
+    "output_tensor_name": "encoder5.block.0.0.fn.0:out",
+    "padding": [
+      3,
+      3
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "encoder5.block.0.0:out"
+    ],
+    "input_zero_point": -128,
+    "name": "encoder5.block.0.1",
+    "output_tensor_name": "encoder5.block.0.1:out",
+    "padding": [
+      0,
+      0
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "encoder5.block.0.3:out"
+    ],
+    "input_zero_point": -128,
+    "name": "encoder5.block.0.4",
+    "output_tensor_name": "encoder5.block.0.4:out",
+    "padding": [
+      0,
+      0
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "encoder5.block.0.6:out"
+    ],
+    "input_zero_point": -128,
+    "name": "encoder5.up.conv.0",
+    "output_tensor_name": "encoder5.up.conv.0:out",
+    "padding": [
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "Up5.up.0:out"
+    ],
+    "input_zero_point": -128,
+    "name": "Up5.up.1",
+    "output_tensor_name": "Up5.up.1:out",
+    "padding": [
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 2,
+    "input_tensor_names": [
+      "Up_conv5.conv.0:input0"
+    ],
+    "input_zero_point": -128,
+    "name": "Up_conv5.conv.0",
+    "output_tensor_name": "Up_conv5.conv.0:out",
+    "padding": [
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "Up_conv5.conv.2:out"
+    ],
+    "input_zero_point": -128,
+    "name": "Up_conv5.conv.3",
+    "output_tensor_name": "Up_conv5.conv.3:out",
+    "padding": [
+      0,
+      0
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "Up_conv5.conv.5:out"
+    ],
+    "input_zero_point": -128,
+    "name": "Up_conv5.conv.6",
+    "output_tensor_name": "Up_conv5.conv.6:out",
+    "padding": [
+      0,
+      0
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "Up4.up.0:out"
+    ],
+    "input_zero_point": -128,
+    "name": "Up4.up.1",
+    "output_tensor_name": "Up4.up.1:out",
+    "padding": [
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 2,
+    "input_tensor_names": [
+      "Up_conv4.conv.0:input0"
+    ],
+    "input_zero_point": -128,
+    "name": "Up_conv4.conv.0",
+    "output_tensor_name": "Up_conv4.conv.0:out",
+    "padding": [
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "Up_conv4.conv.2:out"
+    ],
+    "input_zero_point": -128,
+    "name": "Up_conv4.conv.3",
+    "output_tensor_name": "Up_conv4.conv.3:out",
+    "padding": [
+      0,
+      0
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "Up_conv4.conv.5:out"
+    ],
+    "input_zero_point": -128,
+    "name": "Up_conv4.conv.6",
+    "output_tensor_name": "Up_conv4.conv.6:out",
+    "padding": [
+      0,
+      0
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "Up3.up.0:out"
+    ],
+    "input_zero_point": -128,
+    "name": "Up3.up.1",
+    "output_tensor_name": "Up3.up.1:out",
+    "padding": [
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 2,
+    "input_tensor_names": [
+      "Up_conv3.conv.0:input0"
+    ],
+    "input_zero_point": -128,
+    "name": "Up_conv3.conv.0",
+    "output_tensor_name": "Up_conv3.conv.0:out",
+    "padding": [
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "Up_conv3.conv.2:out"
+    ],
+    "input_zero_point": -128,
+    "name": "Up_conv3.conv.3",
+    "output_tensor_name": "Up_conv3.conv.3:out",
+    "padding": [
+      0,
+      0
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "Up_conv3.conv.5:out"
+    ],
+    "input_zero_point": -128,
+    "name": "Up_conv3.conv.6",
+    "output_tensor_name": "Up_conv3.conv.6:out",
+    "padding": [
+      0,
+      0
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "Up2.up.0:out"
+    ],
+    "input_zero_point": -128,
+    "name": "Up2.up.1",
+    "output_tensor_name": "Up2.up.1:out",
+    "padding": [
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 2,
+    "input_tensor_names": [
+      "Up_conv2.conv.0:input0"
+    ],
+    "input_zero_point": -128,
+    "name": "Up_conv2.conv.0",
+    "output_tensor_name": "Up_conv2.conv.0:out",
+    "padding": [
+      1,
+      1
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "Up_conv2.conv.2:out"
+    ],
+    "input_zero_point": -127,
+    "name": "Up_conv2.conv.3",
+    "output_tensor_name": "Up_conv2.conv.3:out",
+    "padding": [
+      0,
+      0
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "Up_conv2.conv.5:out"
+    ],
+    "input_zero_point": -128,
+    "name": "Up_conv2.conv.6",
+    "output_tensor_name": "Up_conv2.conv.6:out",
+    "padding": [
+      0,
+      0
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  },
+  {
+    "dilation": [
+      1,
+      1
+    ],
+    "groups": 1,
+    "input_tensor_names": [
+      "Up_conv2.conv.8:out"
+    ],
+    "input_zero_point": -128,
+    "name": "Conv_1x1",
+    "output_tensor_name": "Conv_1x1:out",
+    "padding": [
+      0,
+      0
+    ],
+    "stride": [
+      1,
+      1
+    ],
+    "weight_zero_point": 0
+  }
+]

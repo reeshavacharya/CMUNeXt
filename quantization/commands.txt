@@ -1,0 +1,29 @@
+python3 prepare_model.py "../checkpoint/CMUNeXt_model_busi_train.pth" --variant "base" --save-summary "summary.json"
+
+python3 calibrate.py \
+    ../checkpoint/CMUNeXt_model_busi_train.pth \
+    --variant base \
+    --image-dir ../data/busi/calibration/images \
+    --mask-dir ../data/busi/calibration/masks/0 \
+    --save-path calibration_stats.json
+optional: --max-samples 10
+
+python3 quantize.py \
+    ../checkpoint/CMUNeXt_model_busi_train.pth \
+    --calibration-stats-path calibration_stats.json \
+    --variant base \
+    --export-dir quantized_artifacts \
+    --map-location cpu
+
+python3 decompose_trace.py \
+  --input-trace quantized_artifacts/execution_trace.json \
+  --output-trace quantized_artifacts/decomposed_execution_trace.json
+
+python3 int_engine.py \
+  --artifacts-dir quantized_artifacts \
+  --image-sample "malignant (64).png" \
+  --return-trace
+
+python3 evaluate.py \
+  --artifacts-dir quantized_artifacts \
+  --image-sample "malignant (64).png" 

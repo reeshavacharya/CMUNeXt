@@ -1,0 +1,3174 @@
+{
+  "stem.conv.0:input0": {
+    "name": "stem.conv.0:input0",
+    "op_type": "Conv2d_input",
+    "min_val": 0.0,
+    "max_val": 1.0,
+    "num_updates": 200,
+    "shape": [
+      1,
+      3,
+      256,
+      256
+    ]
+  },
+  "stem.conv.0": {
+    "name": "stem.conv.0",
+    "op_type": "Conv2d",
+    "min_val": -366.7314758300781,
+    "max_val": 406.8068542480469,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      256,
+      256
+    ]
+  },
+  "encoder1.block.0.0:input0": {
+    "name": "encoder1.block.0.0:input0",
+    "op_type": "Residual_input",
+    "min_val": 0.0,
+    "max_val": 406.8068542480469,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      256,
+      256
+    ]
+  },
+  "encoder1.block.0.0.fn.0:input0": {
+    "name": "encoder1.block.0.0.fn.0:input0",
+    "op_type": "Conv2d_input",
+    "min_val": 0.0,
+    "max_val": 406.8068542480469,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      256,
+      256
+    ]
+  },
+  "encoder1.block.0.0.fn.0": {
+    "name": "encoder1.block.0.0.fn.0",
+    "op_type": "Conv2d",
+    "min_val": -253.0870819091797,
+    "max_val": 301.5358581542969,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      256,
+      256
+    ]
+  },
+  "encoder1.block.0.0.fn.1:input0": {
+    "name": "encoder1.block.0.0.fn.1:input0",
+    "op_type": "GELU_input",
+    "min_val": -253.0870819091797,
+    "max_val": 301.5358581542969,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      256,
+      256
+    ]
+  },
+  "encoder1.block.0.0.fn.1": {
+    "name": "encoder1.block.0.0.fn.1",
+    "op_type": "GELU",
+    "min_val": -0.1699712574481964,
+    "max_val": 301.5358581542969,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      256,
+      256
+    ]
+  },
+  "encoder1.block.0.0.fn.2:input0": {
+    "name": "encoder1.block.0.0.fn.2:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.1699712574481964,
+    "max_val": 301.5358581542969,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      256,
+      256
+    ]
+  },
+  "encoder1.block.0.0.fn.2": {
+    "name": "encoder1.block.0.0.fn.2",
+    "op_type": "BatchNorm2d",
+    "min_val": -4.71719217300415,
+    "max_val": 3850.9833984375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      256,
+      256
+    ]
+  },
+  "encoder1.block.0.0": {
+    "name": "encoder1.block.0.0",
+    "op_type": "Residual",
+    "min_val": -4.71719217300415,
+    "max_val": 3858.42333984375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      256,
+      256
+    ]
+  },
+  "encoder1.block.0.1:input0": {
+    "name": "encoder1.block.0.1:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -4.71719217300415,
+    "max_val": 3858.42333984375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      256,
+      256
+    ]
+  },
+  "encoder1.block.0.1": {
+    "name": "encoder1.block.0.1",
+    "op_type": "Conv2d",
+    "min_val": -1479.3553466796875,
+    "max_val": 1196.6912841796875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      64,
+      256,
+      256
+    ]
+  },
+  "encoder1.block.0.2:input0": {
+    "name": "encoder1.block.0.2:input0",
+    "op_type": "GELU_input",
+    "min_val": -1479.3553466796875,
+    "max_val": 1196.6912841796875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      64,
+      256,
+      256
+    ]
+  },
+  "encoder1.block.0.2": {
+    "name": "encoder1.block.0.2",
+    "op_type": "GELU",
+    "min_val": -0.16997124254703522,
+    "max_val": 1196.6912841796875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      64,
+      256,
+      256
+    ]
+  },
+  "encoder1.block.0.3:input0": {
+    "name": "encoder1.block.0.3:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.16997124254703522,
+    "max_val": 1196.6912841796875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      64,
+      256,
+      256
+    ]
+  },
+  "encoder1.block.0.3": {
+    "name": "encoder1.block.0.3",
+    "op_type": "BatchNorm2d",
+    "min_val": -1.3485100269317627,
+    "max_val": 4706.97607421875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      64,
+      256,
+      256
+    ]
+  },
+  "encoder1.block.0.4:input0": {
+    "name": "encoder1.block.0.4:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -1.3485100269317627,
+    "max_val": 4706.97607421875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      64,
+      256,
+      256
+    ]
+  },
+  "encoder1.block.0.4": {
+    "name": "encoder1.block.0.4",
+    "op_type": "Conv2d",
+    "min_val": -2762.020751953125,
+    "max_val": 2792.287841796875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      256,
+      256
+    ]
+  },
+  "encoder1.block.0.5:input0": {
+    "name": "encoder1.block.0.5:input0",
+    "op_type": "GELU_input",
+    "min_val": -2762.020751953125,
+    "max_val": 2792.287841796875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      256,
+      256
+    ]
+  },
+  "encoder1.block.0.5": {
+    "name": "encoder1.block.0.5",
+    "op_type": "GELU",
+    "min_val": -0.16997122764587402,
+    "max_val": 2792.287841796875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      256,
+      256
+    ]
+  },
+  "encoder1.block.0.6:input0": {
+    "name": "encoder1.block.0.6:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.16997122764587402,
+    "max_val": 2792.287841796875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      256,
+      256
+    ]
+  },
+  "encoder1.block.0.6": {
+    "name": "encoder1.block.0.6",
+    "op_type": "BatchNorm2d",
+    "min_val": -0.8854743838310242,
+    "max_val": 3281.041259765625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      256,
+      256
+    ]
+  },
+  "encoder1.up.conv.0:input0": {
+    "name": "encoder1.up.conv.0:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -0.8854743838310242,
+    "max_val": 3281.041259765625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      256,
+      256
+    ]
+  },
+  "encoder1.up.conv.0": {
+    "name": "encoder1.up.conv.0",
+    "op_type": "Conv2d",
+    "min_val": -771.0897827148438,
+    "max_val": 1035.1317138671875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      256,
+      256
+    ]
+  },
+  "Maxpool:input0": {
+    "name": "Maxpool:input0",
+    "op_type": "MaxPool2d_input",
+    "min_val": 0.0,
+    "max_val": 2857.684326171875,
+    "num_updates": 800,
+    "shape": [
+      1,
+      160,
+      32,
+      32
+    ]
+  },
+  "Maxpool": {
+    "name": "Maxpool",
+    "op_type": "MaxPool2d",
+    "min_val": 0.0,
+    "max_val": 2857.684326171875,
+    "num_updates": 800,
+    "shape": [
+      1,
+      160,
+      16,
+      16
+    ]
+  },
+  "encoder2.block.0.0:input0": {
+    "name": "encoder2.block.0.0:input0",
+    "op_type": "Residual_input",
+    "min_val": 0.0,
+    "max_val": 1035.1317138671875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      128,
+      128
+    ]
+  },
+  "encoder2.block.0.0.fn.0:input0": {
+    "name": "encoder2.block.0.0.fn.0:input0",
+    "op_type": "Conv2d_input",
+    "min_val": 0.0,
+    "max_val": 1035.1317138671875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      128,
+      128
+    ]
+  },
+  "encoder2.block.0.0.fn.0": {
+    "name": "encoder2.block.0.0.fn.0",
+    "op_type": "Conv2d",
+    "min_val": -347.58660888671875,
+    "max_val": 759.8911743164062,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      128,
+      128
+    ]
+  },
+  "encoder2.block.0.0.fn.1:input0": {
+    "name": "encoder2.block.0.0.fn.1:input0",
+    "op_type": "GELU_input",
+    "min_val": -347.58660888671875,
+    "max_val": 759.8911743164062,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      128,
+      128
+    ]
+  },
+  "encoder2.block.0.0.fn.1": {
+    "name": "encoder2.block.0.0.fn.1",
+    "op_type": "GELU",
+    "min_val": -0.16997124254703522,
+    "max_val": 759.8911743164062,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      128,
+      128
+    ]
+  },
+  "encoder2.block.0.0.fn.2:input0": {
+    "name": "encoder2.block.0.0.fn.2:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.16997124254703522,
+    "max_val": 759.8911743164062,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      128,
+      128
+    ]
+  },
+  "encoder2.block.0.0.fn.2": {
+    "name": "encoder2.block.0.0.fn.2",
+    "op_type": "BatchNorm2d",
+    "min_val": -2.2197601795196533,
+    "max_val": 5823.70166015625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      128,
+      128
+    ]
+  },
+  "encoder2.block.0.0": {
+    "name": "encoder2.block.0.0",
+    "op_type": "Residual",
+    "min_val": -2.2197601795196533,
+    "max_val": 5823.70166015625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      128,
+      128
+    ]
+  },
+  "encoder2.block.0.1:input0": {
+    "name": "encoder2.block.0.1:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -2.2197601795196533,
+    "max_val": 5823.70166015625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      128,
+      128
+    ]
+  },
+  "encoder2.block.0.1": {
+    "name": "encoder2.block.0.1",
+    "op_type": "Conv2d",
+    "min_val": -1407.1026611328125,
+    "max_val": 1871.701416015625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      64,
+      128,
+      128
+    ]
+  },
+  "encoder2.block.0.2:input0": {
+    "name": "encoder2.block.0.2:input0",
+    "op_type": "GELU_input",
+    "min_val": -1407.1026611328125,
+    "max_val": 1871.701416015625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      64,
+      128,
+      128
+    ]
+  },
+  "encoder2.block.0.2": {
+    "name": "encoder2.block.0.2",
+    "op_type": "GELU",
+    "min_val": -0.16997124254703522,
+    "max_val": 1871.701416015625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      64,
+      128,
+      128
+    ]
+  },
+  "encoder2.block.0.3:input0": {
+    "name": "encoder2.block.0.3:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.16997124254703522,
+    "max_val": 1871.701416015625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      64,
+      128,
+      128
+    ]
+  },
+  "encoder2.block.0.3": {
+    "name": "encoder2.block.0.3",
+    "op_type": "BatchNorm2d",
+    "min_val": -1.0504032373428345,
+    "max_val": 5166.66943359375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      64,
+      128,
+      128
+    ]
+  },
+  "encoder2.block.0.4:input0": {
+    "name": "encoder2.block.0.4:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -1.0504032373428345,
+    "max_val": 5166.66943359375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      64,
+      128,
+      128
+    ]
+  },
+  "encoder2.block.0.4": {
+    "name": "encoder2.block.0.4",
+    "op_type": "Conv2d",
+    "min_val": -3005.676513671875,
+    "max_val": 4534.7744140625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      128,
+      128
+    ]
+  },
+  "encoder2.block.0.5:input0": {
+    "name": "encoder2.block.0.5:input0",
+    "op_type": "GELU_input",
+    "min_val": -3005.676513671875,
+    "max_val": 4534.7744140625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      128,
+      128
+    ]
+  },
+  "encoder2.block.0.5": {
+    "name": "encoder2.block.0.5",
+    "op_type": "GELU",
+    "min_val": -0.16997124254703522,
+    "max_val": 4534.7744140625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      128,
+      128
+    ]
+  },
+  "encoder2.block.0.6:input0": {
+    "name": "encoder2.block.0.6:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.16997124254703522,
+    "max_val": 4534.7744140625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      128,
+      128
+    ]
+  },
+  "encoder2.block.0.6": {
+    "name": "encoder2.block.0.6",
+    "op_type": "BatchNorm2d",
+    "min_val": -0.8211647272109985,
+    "max_val": 4351.69580078125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      128,
+      128
+    ]
+  },
+  "encoder2.up.conv.0:input0": {
+    "name": "encoder2.up.conv.0:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -0.8211647272109985,
+    "max_val": 4351.69580078125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      128,
+      128
+    ]
+  },
+  "encoder2.up.conv.0": {
+    "name": "encoder2.up.conv.0",
+    "op_type": "Conv2d",
+    "min_val": -1207.2957763671875,
+    "max_val": 2857.684326171875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      128,
+      128
+    ]
+  },
+  "encoder3.block.0.0:input0": {
+    "name": "encoder3.block.0.0:input0",
+    "op_type": "Residual_input",
+    "min_val": 0.0,
+    "max_val": 2857.684326171875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      64,
+      64
+    ]
+  },
+  "encoder3.block.0.0.fn.0:input0": {
+    "name": "encoder3.block.0.0.fn.0:input0",
+    "op_type": "Conv2d_input",
+    "min_val": 0.0,
+    "max_val": 2857.684326171875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      64,
+      64
+    ]
+  },
+  "encoder3.block.0.0.fn.0": {
+    "name": "encoder3.block.0.0.fn.0",
+    "op_type": "Conv2d",
+    "min_val": -915.9000244140625,
+    "max_val": 1041.4674072265625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      64,
+      64
+    ]
+  },
+  "encoder3.block.0.0.fn.1:input0": {
+    "name": "encoder3.block.0.0.fn.1:input0",
+    "op_type": "GELU_input",
+    "min_val": -915.9000244140625,
+    "max_val": 1041.4674072265625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      64,
+      64
+    ]
+  },
+  "encoder3.block.0.0.fn.1": {
+    "name": "encoder3.block.0.0.fn.1",
+    "op_type": "GELU",
+    "min_val": -0.16997122764587402,
+    "max_val": 1041.4674072265625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      64,
+      64
+    ]
+  },
+  "encoder3.block.0.0.fn.2:input0": {
+    "name": "encoder3.block.0.0.fn.2:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.16997122764587402,
+    "max_val": 1041.4674072265625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      64,
+      64
+    ]
+  },
+  "encoder3.block.0.0.fn.2": {
+    "name": "encoder3.block.0.0.fn.2",
+    "op_type": "BatchNorm2d",
+    "min_val": -1.3891160488128662,
+    "max_val": 5156.98583984375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      64,
+      64
+    ]
+  },
+  "encoder3.block.0.0": {
+    "name": "encoder3.block.0.0",
+    "op_type": "Residual",
+    "min_val": -1.3891160488128662,
+    "max_val": 5176.734375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      64,
+      64
+    ]
+  },
+  "encoder3.block.0.1:input0": {
+    "name": "encoder3.block.0.1:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -1.3891160488128662,
+    "max_val": 5176.734375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      64,
+      64
+    ]
+  },
+  "encoder3.block.0.1": {
+    "name": "encoder3.block.0.1",
+    "op_type": "Conv2d",
+    "min_val": -1316.1475830078125,
+    "max_val": 1378.0,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      64,
+      64
+    ]
+  },
+  "encoder3.block.0.2:input0": {
+    "name": "encoder3.block.0.2:input0",
+    "op_type": "GELU_input",
+    "min_val": -1316.1475830078125,
+    "max_val": 1378.0,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      64,
+      64
+    ]
+  },
+  "encoder3.block.0.2": {
+    "name": "encoder3.block.0.2",
+    "op_type": "GELU",
+    "min_val": -0.16997124254703522,
+    "max_val": 1378.0,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      64,
+      64
+    ]
+  },
+  "encoder3.block.0.3:input0": {
+    "name": "encoder3.block.0.3:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.16997124254703522,
+    "max_val": 1378.0,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      64,
+      64
+    ]
+  },
+  "encoder3.block.0.3": {
+    "name": "encoder3.block.0.3",
+    "op_type": "BatchNorm2d",
+    "min_val": -1.2779016494750977,
+    "max_val": 3196.716796875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      64,
+      64
+    ]
+  },
+  "encoder3.block.0.4:input0": {
+    "name": "encoder3.block.0.4:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -1.2779016494750977,
+    "max_val": 3196.716796875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      64,
+      64
+    ]
+  },
+  "encoder3.block.0.4": {
+    "name": "encoder3.block.0.4",
+    "op_type": "Conv2d",
+    "min_val": -1363.26171875,
+    "max_val": 1994.8568115234375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      64,
+      64
+    ]
+  },
+  "encoder3.block.0.5:input0": {
+    "name": "encoder3.block.0.5:input0",
+    "op_type": "GELU_input",
+    "min_val": -1363.26171875,
+    "max_val": 1994.8568115234375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      64,
+      64
+    ]
+  },
+  "encoder3.block.0.5": {
+    "name": "encoder3.block.0.5",
+    "op_type": "GELU",
+    "min_val": -0.16997121274471283,
+    "max_val": 1994.8568115234375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      64,
+      64
+    ]
+  },
+  "encoder3.block.0.6:input0": {
+    "name": "encoder3.block.0.6:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.16997121274471283,
+    "max_val": 1994.8568115234375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      64,
+      64
+    ]
+  },
+  "encoder3.block.0.6": {
+    "name": "encoder3.block.0.6",
+    "op_type": "BatchNorm2d",
+    "min_val": -0.8019759654998779,
+    "max_val": 2057.66015625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      64,
+      64
+    ]
+  },
+  "encoder3.up.conv.0:input0": {
+    "name": "encoder3.up.conv.0:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -0.8019759654998779,
+    "max_val": 2057.66015625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      64,
+      64
+    ]
+  },
+  "encoder3.up.conv.0": {
+    "name": "encoder3.up.conv.0",
+    "op_type": "Conv2d",
+    "min_val": -1284.84423828125,
+    "max_val": 1577.2745361328125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      64,
+      64
+    ]
+  },
+  "encoder4.block.0.0:input0": {
+    "name": "encoder4.block.0.0:input0",
+    "op_type": "Residual_input",
+    "min_val": 0.0,
+    "max_val": 1577.2745361328125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.0.0.fn.0:input0": {
+    "name": "encoder4.block.0.0.fn.0:input0",
+    "op_type": "Conv2d_input",
+    "min_val": 0.0,
+    "max_val": 1577.2745361328125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.0.0.fn.0": {
+    "name": "encoder4.block.0.0.fn.0",
+    "op_type": "Conv2d",
+    "min_val": -509.50146484375,
+    "max_val": 689.4022827148438,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.0.0.fn.1:input0": {
+    "name": "encoder4.block.0.0.fn.1:input0",
+    "op_type": "GELU_input",
+    "min_val": -509.50146484375,
+    "max_val": 689.4022827148438,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.0.0.fn.1": {
+    "name": "encoder4.block.0.0.fn.1",
+    "op_type": "GELU",
+    "min_val": -0.16997124254703522,
+    "max_val": 689.4022827148438,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.0.0.fn.2:input0": {
+    "name": "encoder4.block.0.0.fn.2:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.16997124254703522,
+    "max_val": 689.4022827148438,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.0.0.fn.2": {
+    "name": "encoder4.block.0.0.fn.2",
+    "op_type": "BatchNorm2d",
+    "min_val": -1.5145702362060547,
+    "max_val": 2031.060546875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.0.0": {
+    "name": "encoder4.block.0.0",
+    "op_type": "Residual",
+    "min_val": -1.5145702362060547,
+    "max_val": 2091.290771484375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.0.1:input0": {
+    "name": "encoder4.block.0.1:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -1.5145702362060547,
+    "max_val": 2091.290771484375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.0.1": {
+    "name": "encoder4.block.0.1",
+    "op_type": "Conv2d",
+    "min_val": -992.3978271484375,
+    "max_val": 1089.7813720703125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      512,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.0.2:input0": {
+    "name": "encoder4.block.0.2:input0",
+    "op_type": "GELU_input",
+    "min_val": -992.3978271484375,
+    "max_val": 1089.7813720703125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      512,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.0.2": {
+    "name": "encoder4.block.0.2",
+    "op_type": "GELU",
+    "min_val": -0.16997124254703522,
+    "max_val": 1089.7813720703125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      512,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.0.3:input0": {
+    "name": "encoder4.block.0.3:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.16997124254703522,
+    "max_val": 1089.7813720703125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      512,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.0.3": {
+    "name": "encoder4.block.0.3",
+    "op_type": "BatchNorm2d",
+    "min_val": -1.2964329719543457,
+    "max_val": 2082.590087890625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      512,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.0.4:input0": {
+    "name": "encoder4.block.0.4:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -1.2964329719543457,
+    "max_val": 2082.590087890625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      512,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.0.4": {
+    "name": "encoder4.block.0.4",
+    "op_type": "Conv2d",
+    "min_val": -1650.48291015625,
+    "max_val": 1722.329833984375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.0.5:input0": {
+    "name": "encoder4.block.0.5:input0",
+    "op_type": "GELU_input",
+    "min_val": -1650.48291015625,
+    "max_val": 1722.329833984375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.0.5": {
+    "name": "encoder4.block.0.5",
+    "op_type": "GELU",
+    "min_val": -0.16997122764587402,
+    "max_val": 1722.329833984375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.0.6:input0": {
+    "name": "encoder4.block.0.6:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.16997122764587402,
+    "max_val": 1722.329833984375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.0.6": {
+    "name": "encoder4.block.0.6",
+    "op_type": "BatchNorm2d",
+    "min_val": -0.8381996750831604,
+    "max_val": 1713.663330078125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.1.0:input0": {
+    "name": "encoder4.block.1.0:input0",
+    "op_type": "Residual_input",
+    "min_val": -0.8381996750831604,
+    "max_val": 1713.663330078125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.1.0.fn.0:input0": {
+    "name": "encoder4.block.1.0.fn.0:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -0.8381996750831604,
+    "max_val": 1713.663330078125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.1.0.fn.0": {
+    "name": "encoder4.block.1.0.fn.0",
+    "op_type": "Conv2d",
+    "min_val": -793.7329711914062,
+    "max_val": 714.5287475585938,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.1.0.fn.1:input0": {
+    "name": "encoder4.block.1.0.fn.1:input0",
+    "op_type": "GELU_input",
+    "min_val": -793.7329711914062,
+    "max_val": 714.5287475585938,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.1.0.fn.1": {
+    "name": "encoder4.block.1.0.fn.1",
+    "op_type": "GELU",
+    "min_val": -0.16997122764587402,
+    "max_val": 714.5287475585938,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.1.0.fn.2:input0": {
+    "name": "encoder4.block.1.0.fn.2:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.16997122764587402,
+    "max_val": 714.5287475585938,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.1.0.fn.2": {
+    "name": "encoder4.block.1.0.fn.2",
+    "op_type": "BatchNorm2d",
+    "min_val": -1.3625431060791016,
+    "max_val": 1361.739990234375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.1.0": {
+    "name": "encoder4.block.1.0",
+    "op_type": "Residual",
+    "min_val": -1.9176347255706787,
+    "max_val": 2196.3427734375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.1.1:input0": {
+    "name": "encoder4.block.1.1:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -1.9176347255706787,
+    "max_val": 2196.3427734375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.1.1": {
+    "name": "encoder4.block.1.1",
+    "op_type": "Conv2d",
+    "min_val": -883.6300659179688,
+    "max_val": 928.8994750976562,
+    "num_updates": 200,
+    "shape": [
+      1,
+      512,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.1.2:input0": {
+    "name": "encoder4.block.1.2:input0",
+    "op_type": "GELU_input",
+    "min_val": -883.6300659179688,
+    "max_val": 928.8994750976562,
+    "num_updates": 200,
+    "shape": [
+      1,
+      512,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.1.2": {
+    "name": "encoder4.block.1.2",
+    "op_type": "GELU",
+    "min_val": -0.16997122764587402,
+    "max_val": 928.8994750976562,
+    "num_updates": 200,
+    "shape": [
+      1,
+      512,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.1.3:input0": {
+    "name": "encoder4.block.1.3:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.16997122764587402,
+    "max_val": 928.8994750976562,
+    "num_updates": 200,
+    "shape": [
+      1,
+      512,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.1.3": {
+    "name": "encoder4.block.1.3",
+    "op_type": "BatchNorm2d",
+    "min_val": -0.9201378226280212,
+    "max_val": 1420.2545166015625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      512,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.1.4:input0": {
+    "name": "encoder4.block.1.4:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -0.9201378226280212,
+    "max_val": 1420.2545166015625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      512,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.1.4": {
+    "name": "encoder4.block.1.4",
+    "op_type": "Conv2d",
+    "min_val": -1415.50732421875,
+    "max_val": 1335.897705078125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.1.5:input0": {
+    "name": "encoder4.block.1.5:input0",
+    "op_type": "GELU_input",
+    "min_val": -1415.50732421875,
+    "max_val": 1335.897705078125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.1.5": {
+    "name": "encoder4.block.1.5",
+    "op_type": "GELU",
+    "min_val": -0.16997122764587402,
+    "max_val": 1335.897705078125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.1.6:input0": {
+    "name": "encoder4.block.1.6:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.16997122764587402,
+    "max_val": 1335.897705078125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.1.6": {
+    "name": "encoder4.block.1.6",
+    "op_type": "BatchNorm2d",
+    "min_val": -0.870934009552002,
+    "max_val": 1295.6053466796875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.2.0:input0": {
+    "name": "encoder4.block.2.0:input0",
+    "op_type": "Residual_input",
+    "min_val": -0.870934009552002,
+    "max_val": 1295.6053466796875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.2.0.fn.0:input0": {
+    "name": "encoder4.block.2.0.fn.0:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -0.870934009552002,
+    "max_val": 1295.6053466796875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.2.0.fn.0": {
+    "name": "encoder4.block.2.0.fn.0",
+    "op_type": "Conv2d",
+    "min_val": -785.5283813476562,
+    "max_val": 626.6343383789062,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.2.0.fn.1:input0": {
+    "name": "encoder4.block.2.0.fn.1:input0",
+    "op_type": "GELU_input",
+    "min_val": -785.5283813476562,
+    "max_val": 626.6343383789062,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.2.0.fn.1": {
+    "name": "encoder4.block.2.0.fn.1",
+    "op_type": "GELU",
+    "min_val": -0.16997122764587402,
+    "max_val": 626.6343383789062,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.2.0.fn.2:input0": {
+    "name": "encoder4.block.2.0.fn.2:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.16997122764587402,
+    "max_val": 626.6343383789062,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.2.0.fn.2": {
+    "name": "encoder4.block.2.0.fn.2",
+    "op_type": "BatchNorm2d",
+    "min_val": -1.4336795806884766,
+    "max_val": 1652.6536865234375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.2.0": {
+    "name": "encoder4.block.2.0",
+    "op_type": "Residual",
+    "min_val": -2.015761375427246,
+    "max_val": 2230.989013671875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.2.1:input0": {
+    "name": "encoder4.block.2.1:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -2.015761375427246,
+    "max_val": 2230.989013671875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.2.1": {
+    "name": "encoder4.block.2.1",
+    "op_type": "Conv2d",
+    "min_val": -832.3826904296875,
+    "max_val": 823.20947265625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      512,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.2.2:input0": {
+    "name": "encoder4.block.2.2:input0",
+    "op_type": "GELU_input",
+    "min_val": -832.3826904296875,
+    "max_val": 823.20947265625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      512,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.2.2": {
+    "name": "encoder4.block.2.2",
+    "op_type": "GELU",
+    "min_val": -0.16997124254703522,
+    "max_val": 823.20947265625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      512,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.2.3:input0": {
+    "name": "encoder4.block.2.3:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.16997124254703522,
+    "max_val": 823.20947265625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      512,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.2.3": {
+    "name": "encoder4.block.2.3",
+    "op_type": "BatchNorm2d",
+    "min_val": -0.92336505651474,
+    "max_val": 1172.2862548828125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      512,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.2.4:input0": {
+    "name": "encoder4.block.2.4:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -0.92336505651474,
+    "max_val": 1172.2862548828125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      512,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.2.4": {
+    "name": "encoder4.block.2.4",
+    "op_type": "Conv2d",
+    "min_val": -816.1491088867188,
+    "max_val": 994.1207885742188,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.2.5:input0": {
+    "name": "encoder4.block.2.5:input0",
+    "op_type": "GELU_input",
+    "min_val": -816.1491088867188,
+    "max_val": 994.1207885742188,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.2.5": {
+    "name": "encoder4.block.2.5",
+    "op_type": "GELU",
+    "min_val": -0.16997122764587402,
+    "max_val": 994.1207885742188,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.2.6:input0": {
+    "name": "encoder4.block.2.6:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.16997122764587402,
+    "max_val": 994.1207885742188,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.block.2.6": {
+    "name": "encoder4.block.2.6",
+    "op_type": "BatchNorm2d",
+    "min_val": -0.8654180765151978,
+    "max_val": 1288.8538818359375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.up.conv.0:input0": {
+    "name": "encoder4.up.conv.0:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -0.8654180765151978,
+    "max_val": 1288.8538818359375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      32,
+      32
+    ]
+  },
+  "encoder4.up.conv.0": {
+    "name": "encoder4.up.conv.0",
+    "op_type": "Conv2d",
+    "min_val": -701.7320556640625,
+    "max_val": 712.2865600585938,
+    "num_updates": 200,
+    "shape": [
+      1,
+      160,
+      32,
+      32
+    ]
+  },
+  "encoder5.block.0.0:input0": {
+    "name": "encoder5.block.0.0:input0",
+    "op_type": "Residual_input",
+    "min_val": 0.0,
+    "max_val": 712.2865600585938,
+    "num_updates": 200,
+    "shape": [
+      1,
+      160,
+      16,
+      16
+    ]
+  },
+  "encoder5.block.0.0.fn.0:input0": {
+    "name": "encoder5.block.0.0.fn.0:input0",
+    "op_type": "Conv2d_input",
+    "min_val": 0.0,
+    "max_val": 712.2865600585938,
+    "num_updates": 200,
+    "shape": [
+      1,
+      160,
+      16,
+      16
+    ]
+  },
+  "encoder5.block.0.0.fn.0": {
+    "name": "encoder5.block.0.0.fn.0",
+    "op_type": "Conv2d",
+    "min_val": -634.5183715820312,
+    "max_val": 408.6080627441406,
+    "num_updates": 200,
+    "shape": [
+      1,
+      160,
+      16,
+      16
+    ]
+  },
+  "encoder5.block.0.0.fn.1:input0": {
+    "name": "encoder5.block.0.0.fn.1:input0",
+    "op_type": "GELU_input",
+    "min_val": -634.5183715820312,
+    "max_val": 408.6080627441406,
+    "num_updates": 200,
+    "shape": [
+      1,
+      160,
+      16,
+      16
+    ]
+  },
+  "encoder5.block.0.0.fn.1": {
+    "name": "encoder5.block.0.0.fn.1",
+    "op_type": "GELU",
+    "min_val": -0.16997122764587402,
+    "max_val": 408.6080627441406,
+    "num_updates": 200,
+    "shape": [
+      1,
+      160,
+      16,
+      16
+    ]
+  },
+  "encoder5.block.0.0.fn.2:input0": {
+    "name": "encoder5.block.0.0.fn.2:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.16997122764587402,
+    "max_val": 408.6080627441406,
+    "num_updates": 200,
+    "shape": [
+      1,
+      160,
+      16,
+      16
+    ]
+  },
+  "encoder5.block.0.0.fn.2": {
+    "name": "encoder5.block.0.0.fn.2",
+    "op_type": "BatchNorm2d",
+    "min_val": -1.7441322803497314,
+    "max_val": 956.0919799804688,
+    "num_updates": 200,
+    "shape": [
+      1,
+      160,
+      16,
+      16
+    ]
+  },
+  "encoder5.block.0.0": {
+    "name": "encoder5.block.0.0",
+    "op_type": "Residual",
+    "min_val": -1.7441322803497314,
+    "max_val": 1382.630859375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      160,
+      16,
+      16
+    ]
+  },
+  "encoder5.block.0.1:input0": {
+    "name": "encoder5.block.0.1:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -1.7441322803497314,
+    "max_val": 1382.630859375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      160,
+      16,
+      16
+    ]
+  },
+  "encoder5.block.0.1": {
+    "name": "encoder5.block.0.1",
+    "op_type": "Conv2d",
+    "min_val": -669.2769165039062,
+    "max_val": 500.64508056640625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      640,
+      16,
+      16
+    ]
+  },
+  "encoder5.block.0.2:input0": {
+    "name": "encoder5.block.0.2:input0",
+    "op_type": "GELU_input",
+    "min_val": -669.2769165039062,
+    "max_val": 500.64508056640625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      640,
+      16,
+      16
+    ]
+  },
+  "encoder5.block.0.2": {
+    "name": "encoder5.block.0.2",
+    "op_type": "GELU",
+    "min_val": -0.16997124254703522,
+    "max_val": 500.64508056640625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      640,
+      16,
+      16
+    ]
+  },
+  "encoder5.block.0.3:input0": {
+    "name": "encoder5.block.0.3:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.16997124254703522,
+    "max_val": 500.64508056640625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      640,
+      16,
+      16
+    ]
+  },
+  "encoder5.block.0.3": {
+    "name": "encoder5.block.0.3",
+    "op_type": "BatchNorm2d",
+    "min_val": -1.2345480918884277,
+    "max_val": 945.3489379882812,
+    "num_updates": 200,
+    "shape": [
+      1,
+      640,
+      16,
+      16
+    ]
+  },
+  "encoder5.block.0.4:input0": {
+    "name": "encoder5.block.0.4:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -1.2345480918884277,
+    "max_val": 945.3489379882812,
+    "num_updates": 200,
+    "shape": [
+      1,
+      640,
+      16,
+      16
+    ]
+  },
+  "encoder5.block.0.4": {
+    "name": "encoder5.block.0.4",
+    "op_type": "Conv2d",
+    "min_val": -503.98895263671875,
+    "max_val": 315.1935119628906,
+    "num_updates": 200,
+    "shape": [
+      1,
+      160,
+      16,
+      16
+    ]
+  },
+  "encoder5.block.0.5:input0": {
+    "name": "encoder5.block.0.5:input0",
+    "op_type": "GELU_input",
+    "min_val": -503.98895263671875,
+    "max_val": 315.1935119628906,
+    "num_updates": 200,
+    "shape": [
+      1,
+      160,
+      16,
+      16
+    ]
+  },
+  "encoder5.block.0.5": {
+    "name": "encoder5.block.0.5",
+    "op_type": "GELU",
+    "min_val": -0.16997121274471283,
+    "max_val": 315.1935119628906,
+    "num_updates": 200,
+    "shape": [
+      1,
+      160,
+      16,
+      16
+    ]
+  },
+  "encoder5.block.0.6:input0": {
+    "name": "encoder5.block.0.6:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.16997121274471283,
+    "max_val": 315.1935119628906,
+    "num_updates": 200,
+    "shape": [
+      1,
+      160,
+      16,
+      16
+    ]
+  },
+  "encoder5.block.0.6": {
+    "name": "encoder5.block.0.6",
+    "op_type": "BatchNorm2d",
+    "min_val": -0.9687005281448364,
+    "max_val": 512.0157470703125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      160,
+      16,
+      16
+    ]
+  },
+  "encoder5.up.conv.0:input0": {
+    "name": "encoder5.up.conv.0:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -0.9687005281448364,
+    "max_val": 512.0157470703125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      160,
+      16,
+      16
+    ]
+  },
+  "encoder5.up.conv.0": {
+    "name": "encoder5.up.conv.0",
+    "op_type": "Conv2d",
+    "min_val": -295.3890686035156,
+    "max_val": 263.7957458496094,
+    "num_updates": 200,
+    "shape": [
+      1,
+      256,
+      16,
+      16
+    ]
+  },
+  "Up5.up.0:input0": {
+    "name": "Up5.up.0:input0",
+    "op_type": "Upsample_input",
+    "min_val": 0.0,
+    "max_val": 263.7957458496094,
+    "num_updates": 200,
+    "shape": [
+      1,
+      256,
+      16,
+      16
+    ]
+  },
+  "Up5.up.0": {
+    "name": "Up5.up.0",
+    "op_type": "Upsample",
+    "min_val": 0.0,
+    "max_val": 263.7957458496094,
+    "num_updates": 200,
+    "shape": [
+      1,
+      256,
+      32,
+      32
+    ]
+  },
+  "Up5.up.1:input0": {
+    "name": "Up5.up.1:input0",
+    "op_type": "Conv2d_input",
+    "min_val": 0.0,
+    "max_val": 263.7957458496094,
+    "num_updates": 200,
+    "shape": [
+      1,
+      256,
+      32,
+      32
+    ]
+  },
+  "Up5.up.1": {
+    "name": "Up5.up.1",
+    "op_type": "Conv2d",
+    "min_val": -223.0941925048828,
+    "max_val": 233.2611541748047,
+    "num_updates": 200,
+    "shape": [
+      1,
+      160,
+      32,
+      32
+    ]
+  },
+  "Up_conv5.conv.0:input0": {
+    "name": "Up_conv5.conv.0:input0",
+    "op_type": "Conv2d_input",
+    "min_val": 0.0,
+    "max_val": 712.2865600585938,
+    "num_updates": 200,
+    "shape": [
+      1,
+      320,
+      32,
+      32
+    ]
+  },
+  "Up_conv5.conv.0": {
+    "name": "Up_conv5.conv.0",
+    "op_type": "Conv2d",
+    "min_val": -558.0283813476562,
+    "max_val": 408.2195739746094,
+    "num_updates": 200,
+    "shape": [
+      1,
+      320,
+      32,
+      32
+    ]
+  },
+  "Up_conv5.conv.1:input0": {
+    "name": "Up_conv5.conv.1:input0",
+    "op_type": "GELU_input",
+    "min_val": -558.0283813476562,
+    "max_val": 408.2195739746094,
+    "num_updates": 200,
+    "shape": [
+      1,
+      320,
+      32,
+      32
+    ]
+  },
+  "Up_conv5.conv.1": {
+    "name": "Up_conv5.conv.1",
+    "op_type": "GELU",
+    "min_val": -0.16997122764587402,
+    "max_val": 408.2195739746094,
+    "num_updates": 200,
+    "shape": [
+      1,
+      320,
+      32,
+      32
+    ]
+  },
+  "Up_conv5.conv.2:input0": {
+    "name": "Up_conv5.conv.2:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.16997122764587402,
+    "max_val": 408.2195739746094,
+    "num_updates": 200,
+    "shape": [
+      1,
+      320,
+      32,
+      32
+    ]
+  },
+  "Up_conv5.conv.2": {
+    "name": "Up_conv5.conv.2",
+    "op_type": "BatchNorm2d",
+    "min_val": -1.4571138620376587,
+    "max_val": 1087.510498046875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      320,
+      32,
+      32
+    ]
+  },
+  "Up_conv5.conv.3:input0": {
+    "name": "Up_conv5.conv.3:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -1.4571138620376587,
+    "max_val": 1087.510498046875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      320,
+      32,
+      32
+    ]
+  },
+  "Up_conv5.conv.3": {
+    "name": "Up_conv5.conv.3",
+    "op_type": "Conv2d",
+    "min_val": -388.7282409667969,
+    "max_val": 402.11016845703125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      640,
+      32,
+      32
+    ]
+  },
+  "Up_conv5.conv.4:input0": {
+    "name": "Up_conv5.conv.4:input0",
+    "op_type": "GELU_input",
+    "min_val": -388.7282409667969,
+    "max_val": 402.11016845703125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      640,
+      32,
+      32
+    ]
+  },
+  "Up_conv5.conv.4": {
+    "name": "Up_conv5.conv.4",
+    "op_type": "GELU",
+    "min_val": -0.16997124254703522,
+    "max_val": 402.11016845703125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      640,
+      32,
+      32
+    ]
+  },
+  "Up_conv5.conv.5:input0": {
+    "name": "Up_conv5.conv.5:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.16997124254703522,
+    "max_val": 402.11016845703125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      640,
+      32,
+      32
+    ]
+  },
+  "Up_conv5.conv.5": {
+    "name": "Up_conv5.conv.5",
+    "op_type": "BatchNorm2d",
+    "min_val": -1.4730308055877686,
+    "max_val": 1048.005126953125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      640,
+      32,
+      32
+    ]
+  },
+  "Up_conv5.conv.6:input0": {
+    "name": "Up_conv5.conv.6:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -1.4730308055877686,
+    "max_val": 1048.005126953125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      640,
+      32,
+      32
+    ]
+  },
+  "Up_conv5.conv.6": {
+    "name": "Up_conv5.conv.6",
+    "op_type": "Conv2d",
+    "min_val": -647.4999389648438,
+    "max_val": 325.24554443359375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      160,
+      32,
+      32
+    ]
+  },
+  "Up_conv5.conv.7:input0": {
+    "name": "Up_conv5.conv.7:input0",
+    "op_type": "GELU_input",
+    "min_val": -647.4999389648438,
+    "max_val": 325.24554443359375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      160,
+      32,
+      32
+    ]
+  },
+  "Up_conv5.conv.7": {
+    "name": "Up_conv5.conv.7",
+    "op_type": "GELU",
+    "min_val": -0.16997122764587402,
+    "max_val": 325.24554443359375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      160,
+      32,
+      32
+    ]
+  },
+  "Up_conv5.conv.8:input0": {
+    "name": "Up_conv5.conv.8:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.16997122764587402,
+    "max_val": 325.24554443359375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      160,
+      32,
+      32
+    ]
+  },
+  "Up_conv5.conv.8": {
+    "name": "Up_conv5.conv.8",
+    "op_type": "BatchNorm2d",
+    "min_val": -1.235310435295105,
+    "max_val": 803.5801391601562,
+    "num_updates": 200,
+    "shape": [
+      1,
+      160,
+      32,
+      32
+    ]
+  },
+  "Up4.up.0:input0": {
+    "name": "Up4.up.0:input0",
+    "op_type": "Upsample_input",
+    "min_val": -1.235310435295105,
+    "max_val": 803.5801391601562,
+    "num_updates": 200,
+    "shape": [
+      1,
+      160,
+      32,
+      32
+    ]
+  },
+  "Up4.up.0": {
+    "name": "Up4.up.0",
+    "op_type": "Upsample",
+    "min_val": -1.235310435295105,
+    "max_val": 803.5801391601562,
+    "num_updates": 200,
+    "shape": [
+      1,
+      160,
+      64,
+      64
+    ]
+  },
+  "Up4.up.1:input0": {
+    "name": "Up4.up.1:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -1.235310435295105,
+    "max_val": 803.5801391601562,
+    "num_updates": 200,
+    "shape": [
+      1,
+      160,
+      64,
+      64
+    ]
+  },
+  "Up4.up.1": {
+    "name": "Up4.up.1",
+    "op_type": "Conv2d",
+    "min_val": -377.11474609375,
+    "max_val": 470.3254089355469,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      64,
+      64
+    ]
+  },
+  "Up_conv4.conv.0:input0": {
+    "name": "Up_conv4.conv.0:input0",
+    "op_type": "Conv2d_input",
+    "min_val": 0.0,
+    "max_val": 1577.2745361328125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      256,
+      64,
+      64
+    ]
+  },
+  "Up_conv4.conv.0": {
+    "name": "Up_conv4.conv.0",
+    "op_type": "Conv2d",
+    "min_val": -578.6491088867188,
+    "max_val": 505.1767883300781,
+    "num_updates": 200,
+    "shape": [
+      1,
+      256,
+      64,
+      64
+    ]
+  },
+  "Up_conv4.conv.1:input0": {
+    "name": "Up_conv4.conv.1:input0",
+    "op_type": "GELU_input",
+    "min_val": -578.6491088867188,
+    "max_val": 505.1767883300781,
+    "num_updates": 200,
+    "shape": [
+      1,
+      256,
+      64,
+      64
+    ]
+  },
+  "Up_conv4.conv.1": {
+    "name": "Up_conv4.conv.1",
+    "op_type": "GELU",
+    "min_val": -0.1699712574481964,
+    "max_val": 505.1767883300781,
+    "num_updates": 200,
+    "shape": [
+      1,
+      256,
+      64,
+      64
+    ]
+  },
+  "Up_conv4.conv.2:input0": {
+    "name": "Up_conv4.conv.2:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.1699712574481964,
+    "max_val": 505.1767883300781,
+    "num_updates": 200,
+    "shape": [
+      1,
+      256,
+      64,
+      64
+    ]
+  },
+  "Up_conv4.conv.2": {
+    "name": "Up_conv4.conv.2",
+    "op_type": "BatchNorm2d",
+    "min_val": -1.6299694776535034,
+    "max_val": 2474.287353515625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      256,
+      64,
+      64
+    ]
+  },
+  "Up_conv4.conv.3:input0": {
+    "name": "Up_conv4.conv.3:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -1.6299694776535034,
+    "max_val": 2474.287353515625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      256,
+      64,
+      64
+    ]
+  },
+  "Up_conv4.conv.3": {
+    "name": "Up_conv4.conv.3",
+    "op_type": "Conv2d",
+    "min_val": -689.7217407226562,
+    "max_val": 681.177734375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      512,
+      64,
+      64
+    ]
+  },
+  "Up_conv4.conv.4:input0": {
+    "name": "Up_conv4.conv.4:input0",
+    "op_type": "GELU_input",
+    "min_val": -689.7217407226562,
+    "max_val": 681.177734375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      512,
+      64,
+      64
+    ]
+  },
+  "Up_conv4.conv.4": {
+    "name": "Up_conv4.conv.4",
+    "op_type": "GELU",
+    "min_val": -0.1699712574481964,
+    "max_val": 681.177734375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      512,
+      64,
+      64
+    ]
+  },
+  "Up_conv4.conv.5:input0": {
+    "name": "Up_conv4.conv.5:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.1699712574481964,
+    "max_val": 681.177734375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      512,
+      64,
+      64
+    ]
+  },
+  "Up_conv4.conv.5": {
+    "name": "Up_conv4.conv.5",
+    "op_type": "BatchNorm2d",
+    "min_val": -1.244102120399475,
+    "max_val": 2230.868408203125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      512,
+      64,
+      64
+    ]
+  },
+  "Up_conv4.conv.6:input0": {
+    "name": "Up_conv4.conv.6:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -1.244102120399475,
+    "max_val": 2230.868408203125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      512,
+      64,
+      64
+    ]
+  },
+  "Up_conv4.conv.6": {
+    "name": "Up_conv4.conv.6",
+    "op_type": "Conv2d",
+    "min_val": -837.4190063476562,
+    "max_val": 676.6919555664062,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      64,
+      64
+    ]
+  },
+  "Up_conv4.conv.7:input0": {
+    "name": "Up_conv4.conv.7:input0",
+    "op_type": "GELU_input",
+    "min_val": -837.4190063476562,
+    "max_val": 676.6919555664062,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      64,
+      64
+    ]
+  },
+  "Up_conv4.conv.7": {
+    "name": "Up_conv4.conv.7",
+    "op_type": "GELU",
+    "min_val": -0.16997124254703522,
+    "max_val": 676.6919555664062,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      64,
+      64
+    ]
+  },
+  "Up_conv4.conv.8:input0": {
+    "name": "Up_conv4.conv.8:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.16997124254703522,
+    "max_val": 676.6919555664062,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      64,
+      64
+    ]
+  },
+  "Up_conv4.conv.8": {
+    "name": "Up_conv4.conv.8",
+    "op_type": "BatchNorm2d",
+    "min_val": -1.1479572057724,
+    "max_val": 2422.983642578125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      64,
+      64
+    ]
+  },
+  "Up3.up.0:input0": {
+    "name": "Up3.up.0:input0",
+    "op_type": "Upsample_input",
+    "min_val": -1.1479572057724,
+    "max_val": 2422.983642578125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      64,
+      64
+    ]
+  },
+  "Up3.up.0": {
+    "name": "Up3.up.0",
+    "op_type": "Upsample",
+    "min_val": -1.1479572057724,
+    "max_val": 2422.983642578125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      128,
+      128
+    ]
+  },
+  "Up3.up.1:input0": {
+    "name": "Up3.up.1:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -1.1479572057724,
+    "max_val": 2422.983642578125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      128,
+      128
+    ]
+  },
+  "Up3.up.1": {
+    "name": "Up3.up.1",
+    "op_type": "Conv2d",
+    "min_val": -799.631103515625,
+    "max_val": 520.7717895507812,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      128,
+      128
+    ]
+  },
+  "Up_conv3.conv.0:input0": {
+    "name": "Up_conv3.conv.0:input0",
+    "op_type": "Conv2d_input",
+    "min_val": 0.0,
+    "max_val": 2857.684326171875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      64,
+      128,
+      128
+    ]
+  },
+  "Up_conv3.conv.0": {
+    "name": "Up_conv3.conv.0",
+    "op_type": "Conv2d",
+    "min_val": -563.095458984375,
+    "max_val": 797.1795654296875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      64,
+      128,
+      128
+    ]
+  },
+  "Up_conv3.conv.1:input0": {
+    "name": "Up_conv3.conv.1:input0",
+    "op_type": "GELU_input",
+    "min_val": -563.095458984375,
+    "max_val": 797.1795654296875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      64,
+      128,
+      128
+    ]
+  },
+  "Up_conv3.conv.1": {
+    "name": "Up_conv3.conv.1",
+    "op_type": "GELU",
+    "min_val": -0.16997124254703522,
+    "max_val": 797.1795654296875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      64,
+      128,
+      128
+    ]
+  },
+  "Up_conv3.conv.2:input0": {
+    "name": "Up_conv3.conv.2:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.16997124254703522,
+    "max_val": 797.1795654296875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      64,
+      128,
+      128
+    ]
+  },
+  "Up_conv3.conv.2": {
+    "name": "Up_conv3.conv.2",
+    "op_type": "BatchNorm2d",
+    "min_val": -1.5516650676727295,
+    "max_val": 3291.995849609375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      64,
+      128,
+      128
+    ]
+  },
+  "Up_conv3.conv.3:input0": {
+    "name": "Up_conv3.conv.3:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -1.5516650676727295,
+    "max_val": 3291.995849609375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      64,
+      128,
+      128
+    ]
+  },
+  "Up_conv3.conv.3": {
+    "name": "Up_conv3.conv.3",
+    "op_type": "Conv2d",
+    "min_val": -885.15380859375,
+    "max_val": 977.7758178710938,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      128,
+      128
+    ]
+  },
+  "Up_conv3.conv.4:input0": {
+    "name": "Up_conv3.conv.4:input0",
+    "op_type": "GELU_input",
+    "min_val": -885.15380859375,
+    "max_val": 977.7758178710938,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      128,
+      128
+    ]
+  },
+  "Up_conv3.conv.4": {
+    "name": "Up_conv3.conv.4",
+    "op_type": "GELU",
+    "min_val": -0.1699712574481964,
+    "max_val": 977.7758178710938,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      128,
+      128
+    ]
+  },
+  "Up_conv3.conv.5:input0": {
+    "name": "Up_conv3.conv.5:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.1699712574481964,
+    "max_val": 977.7758178710938,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      128,
+      128
+    ]
+  },
+  "Up_conv3.conv.5": {
+    "name": "Up_conv3.conv.5",
+    "op_type": "BatchNorm2d",
+    "min_val": -1.8292670249938965,
+    "max_val": 3231.4736328125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      128,
+      128
+    ]
+  },
+  "Up_conv3.conv.6:input0": {
+    "name": "Up_conv3.conv.6:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -1.8292670249938965,
+    "max_val": 3231.4736328125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      128,
+      128,
+      128
+    ]
+  },
+  "Up_conv3.conv.6": {
+    "name": "Up_conv3.conv.6",
+    "op_type": "Conv2d",
+    "min_val": -1168.4111328125,
+    "max_val": 1050.9041748046875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      128,
+      128
+    ]
+  },
+  "Up_conv3.conv.7:input0": {
+    "name": "Up_conv3.conv.7:input0",
+    "op_type": "GELU_input",
+    "min_val": -1168.4111328125,
+    "max_val": 1050.9041748046875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      128,
+      128
+    ]
+  },
+  "Up_conv3.conv.7": {
+    "name": "Up_conv3.conv.7",
+    "op_type": "GELU",
+    "min_val": -0.16997122764587402,
+    "max_val": 1050.9041748046875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      128,
+      128
+    ]
+  },
+  "Up_conv3.conv.8:input0": {
+    "name": "Up_conv3.conv.8:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.16997122764587402,
+    "max_val": 1050.9041748046875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      128,
+      128
+    ]
+  },
+  "Up_conv3.conv.8": {
+    "name": "Up_conv3.conv.8",
+    "op_type": "BatchNorm2d",
+    "min_val": -1.3316128253936768,
+    "max_val": 2834.614501953125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      128,
+      128
+    ]
+  },
+  "Up2.up.0:input0": {
+    "name": "Up2.up.0:input0",
+    "op_type": "Upsample_input",
+    "min_val": -1.3316128253936768,
+    "max_val": 2834.614501953125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      128,
+      128
+    ]
+  },
+  "Up2.up.0": {
+    "name": "Up2.up.0",
+    "op_type": "Upsample",
+    "min_val": -1.3316128253936768,
+    "max_val": 2834.614501953125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      256,
+      256
+    ]
+  },
+  "Up2.up.1:input0": {
+    "name": "Up2.up.1:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -1.3316128253936768,
+    "max_val": 2834.614501953125,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      256,
+      256
+    ]
+  },
+  "Up2.up.1": {
+    "name": "Up2.up.1",
+    "op_type": "Conv2d",
+    "min_val": -542.959716796875,
+    "max_val": 563.4588623046875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      256,
+      256
+    ]
+  },
+  "Up_conv2.conv.0:input0": {
+    "name": "Up_conv2.conv.0:input0",
+    "op_type": "Conv2d_input",
+    "min_val": 0.0,
+    "max_val": 1035.1317138671875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      256,
+      256
+    ]
+  },
+  "Up_conv2.conv.0": {
+    "name": "Up_conv2.conv.0",
+    "op_type": "Conv2d",
+    "min_val": -276.2735900878906,
+    "max_val": 404.80804443359375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      256,
+      256
+    ]
+  },
+  "Up_conv2.conv.1:input0": {
+    "name": "Up_conv2.conv.1:input0",
+    "op_type": "GELU_input",
+    "min_val": -276.2735900878906,
+    "max_val": 404.80804443359375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      256,
+      256
+    ]
+  },
+  "Up_conv2.conv.1": {
+    "name": "Up_conv2.conv.1",
+    "op_type": "GELU",
+    "min_val": -0.16997124254703522,
+    "max_val": 404.80804443359375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      256,
+      256
+    ]
+  },
+  "Up_conv2.conv.2:input0": {
+    "name": "Up_conv2.conv.2:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.16997124254703522,
+    "max_val": 404.80804443359375,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      256,
+      256
+    ]
+  },
+  "Up_conv2.conv.2": {
+    "name": "Up_conv2.conv.2",
+    "op_type": "BatchNorm2d",
+    "min_val": -1.8311623334884644,
+    "max_val": 699.7645874023438,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      256,
+      256
+    ]
+  },
+  "Up_conv2.conv.3:input0": {
+    "name": "Up_conv2.conv.3:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -1.8311623334884644,
+    "max_val": 699.7645874023438,
+    "num_updates": 200,
+    "shape": [
+      1,
+      32,
+      256,
+      256
+    ]
+  },
+  "Up_conv2.conv.3": {
+    "name": "Up_conv2.conv.3",
+    "op_type": "Conv2d",
+    "min_val": -458.375732421875,
+    "max_val": 457.7757873535156,
+    "num_updates": 200,
+    "shape": [
+      1,
+      64,
+      256,
+      256
+    ]
+  },
+  "Up_conv2.conv.4:input0": {
+    "name": "Up_conv2.conv.4:input0",
+    "op_type": "GELU_input",
+    "min_val": -458.375732421875,
+    "max_val": 457.7757873535156,
+    "num_updates": 200,
+    "shape": [
+      1,
+      64,
+      256,
+      256
+    ]
+  },
+  "Up_conv2.conv.4": {
+    "name": "Up_conv2.conv.4",
+    "op_type": "GELU",
+    "min_val": -0.1699712574481964,
+    "max_val": 457.7757873535156,
+    "num_updates": 200,
+    "shape": [
+      1,
+      64,
+      256,
+      256
+    ]
+  },
+  "Up_conv2.conv.5:input0": {
+    "name": "Up_conv2.conv.5:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.1699712574481964,
+    "max_val": 457.7757873535156,
+    "num_updates": 200,
+    "shape": [
+      1,
+      64,
+      256,
+      256
+    ]
+  },
+  "Up_conv2.conv.5": {
+    "name": "Up_conv2.conv.5",
+    "op_type": "BatchNorm2d",
+    "min_val": -2.3356668949127197,
+    "max_val": 1444.9039306640625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      64,
+      256,
+      256
+    ]
+  },
+  "Up_conv2.conv.6:input0": {
+    "name": "Up_conv2.conv.6:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -2.3356668949127197,
+    "max_val": 1444.9039306640625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      64,
+      256,
+      256
+    ]
+  },
+  "Up_conv2.conv.6": {
+    "name": "Up_conv2.conv.6",
+    "op_type": "Conv2d",
+    "min_val": -565.6060180664062,
+    "max_val": 509.4254150390625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      256,
+      256
+    ]
+  },
+  "Up_conv2.conv.7:input0": {
+    "name": "Up_conv2.conv.7:input0",
+    "op_type": "GELU_input",
+    "min_val": -565.6060180664062,
+    "max_val": 509.4254150390625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      256,
+      256
+    ]
+  },
+  "Up_conv2.conv.7": {
+    "name": "Up_conv2.conv.7",
+    "op_type": "GELU",
+    "min_val": -0.1699712574481964,
+    "max_val": 509.4254150390625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      256,
+      256
+    ]
+  },
+  "Up_conv2.conv.8:input0": {
+    "name": "Up_conv2.conv.8:input0",
+    "op_type": "BatchNorm2d_input",
+    "min_val": -0.1699712574481964,
+    "max_val": 509.4254150390625,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      256,
+      256
+    ]
+  },
+  "Up_conv2.conv.8": {
+    "name": "Up_conv2.conv.8",
+    "op_type": "BatchNorm2d",
+    "min_val": -1.6666404008865356,
+    "max_val": 1252.1336669921875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      256,
+      256
+    ]
+  },
+  "Conv_1x1:input0": {
+    "name": "Conv_1x1:input0",
+    "op_type": "Conv2d_input",
+    "min_val": -1.6666404008865356,
+    "max_val": 1252.1336669921875,
+    "num_updates": 200,
+    "shape": [
+      1,
+      16,
+      256,
+      256
+    ]
+  },
+  "Conv_1x1": {
+    "name": "Conv_1x1",
+    "op_type": "Conv2d",
+    "min_val": -629.7545166015625,
+    "max_val": 458.3363952636719,
+    "num_updates": 200,
+    "shape": [
+      1,
+      1,
+      256,
+      256
+    ]
+  }
+}

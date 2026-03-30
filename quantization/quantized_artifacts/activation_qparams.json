@@ -1,0 +1,1954 @@
+{
+  "Conv_1x1": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.267023183785233,
+    "symmetric": false,
+    "zero_point": 20
+  },
+  "Conv_1x1:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.9168639505610745,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Maxpool": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 11.20660520067402,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Maxpool:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 11.20660520067402,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up2.up.0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 11.121357312856937,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up2.up.0:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 11.121357312856937,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up2.up.1": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.338896388633579,
+    "symmetric": false,
+    "zero_point": -3
+  },
+  "Up2.up.1:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 11.121357312856937,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up3.up.0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 9.506398430525088,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up3.up.0:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 9.506398430525088,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up3.up.1": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 5.1780505610447305,
+    "symmetric": false,
+    "zero_point": 26
+  },
+  "Up3.up.1:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 9.506398430525088,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up4.up.0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 3.1561390180213778,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up4.up.0:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 3.1561390180213778,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up4.up.1": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 3.323294725605086,
+    "symmetric": false,
+    "zero_point": -15
+  },
+  "Up4.up.1:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 3.1561390180213778,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up5.up.0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 1.0344931209788604,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up5.up.0:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 1.0344931209788604,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up5.up.1": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 1.7896288105085785,
+    "symmetric": false,
+    "zero_point": -3
+  },
+  "Up5.up.1:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 1.0344931209788604,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv2.conv.0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 2.6709083706724877,
+    "symmetric": false,
+    "zero_point": -25
+  },
+  "Up_conv2.conv.0:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.059340054381128,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv2.conv.1": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 1.588149081082905,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv2.conv.1:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 2.6709083706724877,
+    "symmetric": false,
+    "zero_point": -25
+  },
+  "Up_conv2.conv.2": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 2.751355881316989,
+    "symmetric": false,
+    "zero_point": -127
+  },
+  "Up_conv2.conv.2:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 1.588149081082905,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv2.conv.3": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 3.592751057942708,
+    "symmetric": false,
+    "zero_point": 0
+  },
+  "Up_conv2.conv.3:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 2.751355881316989,
+    "symmetric": false,
+    "zero_point": -127
+  },
+  "Up_conv2.conv.4": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 1.7958657200429953,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv2.conv.4:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 3.592751057942708,
+    "symmetric": false,
+    "zero_point": 0
+  },
+  "Up_conv2.conv.5": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 5.67544940219206,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv2.conv.5:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 1.7958657200429953,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv2.conv.6": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.215809541590073,
+    "symmetric": false,
+    "zero_point": 6
+  },
+  "Up_conv2.conv.6:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 5.67544940219206,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv2.conv.7": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 1.9984132795941596,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv2.conv.7:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.215809541590073,
+    "symmetric": false,
+    "zero_point": 6
+  },
+  "Up_conv2.conv.8": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.9168639505610745,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv2.conv.8:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 1.9984132795941596,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv3.conv.0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 5.334411860447304,
+    "symmetric": false,
+    "zero_point": -22
+  },
+  "Up_conv3.conv.0:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 11.20660520067402,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv3.conv.1": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 3.12686092812641,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv3.conv.1:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 5.334411860447304,
+    "symmetric": false,
+    "zero_point": -22
+  },
+  "Up_conv3.conv.2": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 12.915872606576658,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv3.conv.2:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 3.12686092812641,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv3.conv.3": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 7.305606378293505,
+    "symmetric": false,
+    "zero_point": -7
+  },
+  "Up_conv3.conv.3:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 12.915872606576658,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv3.conv.4": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 3.835081525994282,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv3.conv.4:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 7.305606378293505,
+    "symmetric": false,
+    "zero_point": -7
+  },
+  "Up_conv3.conv.5": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 12.679619215048996,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv3.conv.5:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 3.835081525994282,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv3.conv.6": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 8.703197284773283,
+    "symmetric": false,
+    "zero_point": 6
+  },
+  "Up_conv3.conv.6:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 12.679619215048996,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv3.conv.7": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.121859396205229,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv3.conv.7:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 8.703197284773283,
+    "symmetric": false,
+    "zero_point": 6
+  },
+  "Up_conv3.conv.8": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 11.121357312856937,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv3.conv.8:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.121859396205229,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv4.conv.0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.2502976361443014,
+    "symmetric": false,
+    "zero_point": 8
+  },
+  "Up_conv4.conv.0:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 6.185390337775735,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv4.conv.1": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 1.981751998382456,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv4.conv.1:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.2502976361443014,
+    "symmetric": false,
+    "zero_point": 8
+  },
+  "Up_conv4.conv.2": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 9.709479698012856,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv4.conv.2:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 1.981751998382456,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv4.conv.3": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 5.376076372931985,
+    "symmetric": false,
+    "zero_point": 0
+  },
+  "Up_conv4.conv.3:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 9.709479698012856,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv4.conv.4": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 2.6719517867939144,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv4.conv.4:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 5.376076372931985,
+    "symmetric": false,
+    "zero_point": 0
+  },
+  "Up_conv4.conv.5": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 8.753382393425586,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv4.conv.5:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 2.6719517867939144,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv4.conv.6": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 5.937690046721814,
+    "symmetric": false,
+    "zero_point": 13
+  },
+  "Up_conv4.conv.6:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 8.753382393425586,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv4.conv.7": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 2.6543604972900128,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv4.conv.7:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 5.937690046721814,
+    "symmetric": false,
+    "zero_point": 13
+  },
+  "Up_conv4.conv.8": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 9.506398430525088,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv4.conv.8:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 2.6543604972900128,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv5.conv.0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 3.7892076679304534,
+    "symmetric": false,
+    "zero_point": 19
+  },
+  "Up_conv5.conv.0:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 2.79328062768076,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv5.conv.1": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 1.6015276282441382,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv5.conv.1:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 3.7892076679304534,
+    "symmetric": false,
+    "zero_point": 19
+  },
+  "Up_conv5.conv.2": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.270461223172206,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv5.conv.2:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 1.6015276282441382,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv5.conv.3": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 3.1013270957797183,
+    "symmetric": false,
+    "zero_point": -3
+  },
+  "Up_conv5.conv.3:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.270461223172206,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv5.conv.4": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 1.5775691752924639,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv5.conv.4:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 3.1013270957797183,
+    "symmetric": false,
+    "zero_point": -3
+  },
+  "Up_conv5.conv.5": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.1156006186616185,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv5.conv.5:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 1.5775691752924639,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv5.conv.6": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 3.814688170189951,
+    "symmetric": false,
+    "zero_point": 42
+  },
+  "Up_conv5.conv.6:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.1156006186616185,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv5.conv.7": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 1.2761392771029005,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv5.conv.7:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 3.814688170189951,
+    "symmetric": false,
+    "zero_point": 42
+  },
+  "Up_conv5.conv.8": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 3.1561390180213778,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "Up_conv5.conv.8:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 1.2761392771029005,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder1.block.0.0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 15.149570713791192,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder1.block.0.0.fn.0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 2.174991921817555,
+    "symmetric": false,
+    "zero_point": -12
+  },
+  "encoder1.block.0.0.fn.0:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 1.5953209970511641,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder1.block.0.0.fn.1": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 1.1831601153401767,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder1.block.0.0.fn.1:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 2.174991921817555,
+    "symmetric": false,
+    "zero_point": -12
+  },
+  "encoder1.block.0.0.fn.2": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 15.120394472982369,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder1.block.0.0.fn.2:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 1.1831601153401767,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder1.block.0.0:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 1.5953209970511641,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder1.block.0.1": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 10.49430051317402,
+    "symmetric": false,
+    "zero_point": 13
+  },
+  "encoder1.block.0.1:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 15.149570713791192,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder1.block.0.2": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.6935735506754295,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder1.block.0.2:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 10.49430051317402,
+    "symmetric": false,
+    "zero_point": 13
+  },
+  "encoder1.block.0.3": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 18.464017977434047,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder1.block.0.3:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.6935735506754295,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder1.block.0.4": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 21.781602328431372,
+    "symmetric": false,
+    "zero_point": -1
+  },
+  "encoder1.block.0.4:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 18.464017977434047,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder1.block.0.5": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 10.950814953037337,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder1.block.0.5:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 21.781602328431372,
+    "symmetric": false,
+    "zero_point": -1
+  },
+  "encoder1.block.0.6": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 12.870300918233161,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder1.block.0.6:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 10.950814953037337,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder1.up.conv.0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 7.083221555223652,
+    "symmetric": false,
+    "zero_point": -19
+  },
+  "encoder1.up.conv.0:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 12.870300918233161,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder2.block.0.0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 22.84675066798341,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder2.block.0.0.fn.0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.343050130208334,
+    "symmetric": false,
+    "zero_point": -48
+  },
+  "encoder2.block.0.0.fn.0:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.059340054381128,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder2.block.0.0.fn.1": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 2.980631943368444,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder2.block.0.0.fn.1:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.343050130208334,
+    "symmetric": false,
+    "zero_point": -48
+  },
+  "encoder2.block.0.0.fn.2": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 22.84675066798341,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder2.block.0.0.fn.2:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 2.980631943368444,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder2.block.0.0:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.059340054381128,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder2.block.0.1": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 12.858055204503676,
+    "symmetric": false,
+    "zero_point": -19
+  },
+  "encoder2.block.0.1:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 22.84675066798341,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder2.block.0.2": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 7.340672106894792,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder2.block.0.2:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 12.858055204503676,
+    "symmetric": false,
+    "zero_point": -19
+  },
+  "encoder2.block.0.3": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 20.26556798757291,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder2.block.0.3:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 7.340672106894792,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder2.block.0.4": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 29.570395795036763,
+    "symmetric": false,
+    "zero_point": -26
+  },
+  "encoder2.block.0.4:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 20.26556798757291,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder2.block.0.5": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 17.784095628647243,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder2.block.0.5:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 29.570395795036763,
+    "symmetric": false,
+    "zero_point": -26
+  },
+  "encoder2.block.0.6": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 17.068693982386122,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder2.block.0.6:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 17.784095628647243,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder2.up.conv.0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 15.941098441329657,
+    "symmetric": false,
+    "zero_point": -52
+  },
+  "encoder2.up.conv.0:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 17.068693982386122,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder3.block.0.0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 20.30636663156397,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder3.block.0.0.fn.0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 7.675950712316176,
+    "symmetric": false,
+    "zero_point": -9
+  },
+  "encoder3.block.0.0.fn.0:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 11.20660520067402,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder3.block.0.0.fn.1": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.084852464526308,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder3.block.0.0.fn.1:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 7.675950712316176,
+    "symmetric": false,
+    "zero_point": -9
+  },
+  "encoder3.block.0.0.fn.2": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 20.22892139565711,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder3.block.0.0.fn.2:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.084852464526308,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder3.block.0.0:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 11.20660520067402,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder3.block.0.1": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 10.565284639246324,
+    "symmetric": false,
+    "zero_point": -3
+  },
+  "encoder3.block.0.1:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 20.30636663156397,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder3.block.0.2": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 5.404588122519792,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder3.block.0.2:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 10.565284639246324,
+    "symmetric": false,
+    "zero_point": -3
+  },
+  "encoder3.block.0.3": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 12.541155680488137,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder3.block.0.3:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 5.404588122519792,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder3.block.0.4": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 13.169092275582107,
+    "symmetric": false,
+    "zero_point": -24
+  },
+  "encoder3.block.0.4:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 12.541155680488137,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder3.block.0.5": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 7.823634442102676,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder3.block.0.5:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 13.169092275582107,
+    "symmetric": false,
+    "zero_point": -24
+  },
+  "encoder3.block.0.6": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 8.072400518492156,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder3.block.0.6:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 7.823634442102676,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder3.up.conv.0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 11.223995193780636,
+    "symmetric": false,
+    "zero_point": -14
+  },
+  "encoder3.up.conv.0:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 8.072400518492156,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.0.0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 8.207079771453259,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.0.0.fn.0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.701583323759191,
+    "symmetric": false,
+    "zero_point": -20
+  },
+  "encoder4.block.0.0.fn.0:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 6.185390337775735,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.0.0.fn.1": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 2.704204917479964,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.0.0.fn.1:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.701583323759191,
+    "symmetric": false,
+    "zero_point": -20
+  },
+  "encoder4.block.0.0.fn.2": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 7.970882812200808,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.0.0.fn.2:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 2.704204917479964,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.0.0:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 6.185390337775735,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.0.1": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 8.165408624387254,
+    "symmetric": false,
+    "zero_point": -6
+  },
+  "encoder4.block.0.1:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 8.207079771453259,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.0.2": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.274318993383763,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.0.2:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 8.165408624387254,
+    "symmetric": false,
+    "zero_point": -6
+  },
+  "encoder4.block.0.3": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 8.172104003382664,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.0.3:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.274318993383763,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.0.4": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 13.226716643688725,
+    "symmetric": false,
+    "zero_point": -3
+  },
+  "encoder4.block.0.4:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 8.172104003382664,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.0.5": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 6.754901196909886,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.0.5:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 13.226716643688725,
+    "symmetric": false,
+    "zero_point": -3
+  },
+  "encoder4.block.0.6": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 6.723535410796894,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.0.6:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 6.754901196909886,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.1.0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 8.620629051619884,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.1.0.fn.0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 5.914751838235294,
+    "symmetric": false,
+    "zero_point": 6
+  },
+  "encoder4.block.1.0.fn.0:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 6.723535410796894,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.1.0.fn.1": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 2.802740073671528,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.1.0.fn.1:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 5.914751838235294,
+    "symmetric": false,
+    "zero_point": 6
+  },
+  "encoder4.block.1.0.fn.2": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 5.345500130746879,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.1.0.fn.2:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 2.802740073671528,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.1.0:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 6.723535410796894,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.1.1": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 7.107958984375,
+    "symmetric": false,
+    "zero_point": -4
+  },
+  "encoder4.block.1.1:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 8.620629051619884,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.1.2": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 3.6434095934325574,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.1.2:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 7.107958984375,
+    "symmetric": false,
+    "zero_point": -4
+  },
+  "encoder4.block.1.3": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 5.573233938918394,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.1.3:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 3.6434095934325574,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.1.4": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 10.789823644301471,
+    "symmetric": false,
+    "zero_point": 3
+  },
+  "encoder4.block.1.4:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 5.573233938918394,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.1.5": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 5.239481083552042,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.1.5:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 10.789823644301471,
+    "symmetric": false,
+    "zero_point": 3
+  },
+  "encoder4.block.1.6": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 5.084220708585253,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.1.6:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 5.239481083552042,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.2.0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 8.756881470773735,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.2.0.fn.0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 5.537893018535539,
+    "symmetric": false,
+    "zero_point": 14
+  },
+  "encoder4.block.2.0.fn.0:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 5.084220708585253,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.2.0.fn.1": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 2.458056116104126,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.2.0.fn.1:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 5.537893018535539,
+    "symmetric": false,
+    "zero_point": 14
+  },
+  "encoder4.block.2.0.fn.2": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 6.486617121976964,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.2.0.fn.2:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 2.458056116104126,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.2.0:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 5.084220708585253,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.2.1": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 6.49251828661152,
+    "symmetric": false,
+    "zero_point": 0
+  },
+  "encoder4.block.2.1:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 8.756881470773735,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.2.2": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 3.228938995681557,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.2.2:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 6.49251828661152,
+    "symmetric": false,
+    "zero_point": 0
+  },
+  "encoder4.block.2.3": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.600822038977754,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.2.3:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 3.228938995681557,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.2.4": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 7.099097637101716,
+    "symmetric": false,
+    "zero_point": -13
+  },
+  "encoder4.block.2.4:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.600822038977754,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.2.5": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 3.8991794502033907,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.2.5:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 7.099097637101716,
+    "symmetric": false,
+    "zero_point": -13
+  },
+  "encoder4.block.2.6": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 5.057722744754717,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.block.2.6:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 3.8991794502033907,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder4.up.conv.0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 5.545171042049632,
+    "symmetric": false,
+    "zero_point": -1
+  },
+  "encoder4.up.conv.0:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 5.057722744754717,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder5.block.0.0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 5.428921535903332,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder5.block.0.0.fn.0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.090691899318321,
+    "symmetric": false,
+    "zero_point": 27
+  },
+  "encoder5.block.0.0.fn.0:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 2.79328062768076,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder5.block.0.0.fn.1": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 1.603051113614849,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder5.block.0.0.fn.1:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.090691899318321,
+    "symmetric": false,
+    "zero_point": 27
+  },
+  "encoder5.block.0.0.fn.2": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 3.7562200480816412,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder5.block.0.0.fn.2:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 1.603051113614849,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder5.block.0.0:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 2.79328062768076,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder5.block.0.1": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.587929400275735,
+    "symmetric": false,
+    "zero_point": 18
+  },
+  "encoder5.block.0.1:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 5.428921535903332,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder5.block.0.2": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 1.9639805953292286,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder5.block.0.2:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 4.587929400275735,
+    "symmetric": false,
+    "zero_point": 18
+  },
+  "encoder5.block.0.3": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 3.712092102275175,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder5.block.0.3:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 1.9639805953292286,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder5.block.0.4": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 3.2124802533318015,
+    "symmetric": false,
+    "zero_point": 29
+  },
+  "encoder5.block.0.4:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 3.712092102275175,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder5.block.0.5": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 1.2367195418652366,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder5.block.0.5:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 3.2124802533318015,
+    "symmetric": false,
+    "zero_point": 29
+  },
+  "encoder5.block.0.6": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 2.0117037160723816,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder5.block.0.6:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 1.2367195418652366,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "encoder5.up.conv.0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 2.1928816253063728,
+    "symmetric": false,
+    "zero_point": 7
+  },
+  "encoder5.up.conv.0:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 2.0117037160723816,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "stem.conv.0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 3.033483647365196,
+    "symmetric": false,
+    "zero_point": -7
+  },
+  "stem.conv.0:input0": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 0.00392156862745098,
+    "symmetric": false,
+    "zero_point": -128
+  }
+}

@@ -1,0 +1,1114 @@
+{
+  "model_input_qparams": {
+    "dtype": "int8",
+    "qmax": 127,
+    "qmin": -128,
+    "scale": 0.00392156862745098,
+    "symmetric": false,
+    "zero_point": -128
+  },
+  "quantized_biases": [
+    {
+      "name": "stem.conv.0",
+      "scale": 0.0038526404579425273,
+      "shape": [
+        16
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "encoder1.block.0.0.fn.0",
+      "scale": 0.011812710856911084,
+      "shape": [
+        16
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "encoder1.block.0.1",
+      "scale": 0.040993998152909585,
+      "shape": [
+        64
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "encoder1.block.0.4",
+      "scale": 0.03334114794847047,
+      "shape": [
+        16
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "encoder1.up.conv.0",
+      "scale": 0.01517103055936468,
+      "shape": [
+        16
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "encoder2.block.0.0.fn.0",
+      "scale": 0.04401867547956904,
+      "shape": [
+        16
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "encoder2.block.0.1",
+      "scale": 0.055486383830171446,
+      "shape": [
+        64
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "encoder2.block.0.4",
+      "scale": 0.05283203454089493,
+      "shape": [
+        16
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "encoder2.up.conv.0",
+      "scale": 0.025213173473261578,
+      "shape": [
+        32
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "encoder3.block.0.0.fn.0",
+      "scale": 0.027970772707671576,
+      "shape": [
+        32
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "encoder3.block.0.1",
+      "scale": 0.04478817391973642,
+      "shape": [
+        128
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "encoder3.block.0.4",
+      "scale": 0.026839416530979463,
+      "shape": [
+        32
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "encoder3.up.conv.0",
+      "scale": 0.007951512141213783,
+      "shape": [
+        128
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "encoder4.block.0.0.fn.0",
+      "scale": 0.01994895802309775,
+      "shape": [
+        128
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "encoder4.block.0.1",
+      "scale": 0.009176920937890418,
+      "shape": [
+        512
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "encoder4.block.0.4",
+      "scale": 0.007870265750581005,
+      "shape": [
+        128
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "encoder4.block.1.0.fn.0",
+      "scale": 0.011216056712421547,
+      "shape": [
+        128
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "encoder4.block.1.1",
+      "scale": 0.00857927009528788,
+      "shape": [
+        512
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "encoder4.block.1.4",
+      "scale": 0.004925983236018584,
+      "shape": [
+        128
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "encoder4.block.2.0.fn.0",
+      "scale": 0.009527667697965184,
+      "shape": [
+        128
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "encoder4.block.2.1",
+      "scale": 0.007615566951777896,
+      "shape": [
+        512
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "encoder4.block.2.4",
+      "scale": 0.0033658216959752993,
+      "shape": [
+        128
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "encoder4.up.conv.0",
+      "scale": 0.002097115341221242,
+      "shape": [
+        160
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "encoder5.block.0.0.fn.0",
+      "scale": 0.02233476722088124,
+      "shape": [
+        160
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "encoder5.block.0.1",
+      "scale": 0.0053175781310525454,
+      "shape": [
+        640
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "encoder5.block.0.4",
+      "scale": 0.002203914319345939,
+      "shape": [
+        160
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "encoder5.up.conv.0",
+      "scale": 0.0010176276668275141,
+      "shape": [
+        256
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "Up5.up.1",
+      "scale": 0.0004957303065788524,
+      "shape": [
+        160
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "Up_conv5.conv.0",
+      "scale": 0.0010244315453358213,
+      "shape": [
+        320
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "Up_conv5.conv.3",
+      "scale": 0.0022049744545706764,
+      "shape": [
+        640
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "Up_conv5.conv.6",
+      "scale": 0.0016863732244690164,
+      "shape": [
+        160
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "Up4.up.1",
+      "scale": 0.0014540616440689945,
+      "shape": [
+        128
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "Up_conv4.conv.0",
+      "scale": 0.0026060060242592293,
+      "shape": [
+        256
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "Up_conv4.conv.3",
+      "scale": 0.005670368924880306,
+      "shape": [
+        512
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "Up_conv4.conv.6",
+      "scale": 0.004360948688400599,
+      "shape": [
+        128
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "Up3.up.1",
+      "scale": 0.0042628945838656855,
+      "shape": [
+        32
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "Up_conv3.conv.0",
+      "scale": 0.007976512670746375,
+      "shape": [
+        64
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "Up_conv3.conv.3",
+      "scale": 0.016538289407980127,
+      "shape": [
+        128
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "Up_conv3.conv.6",
+      "scale": 0.012147496163581923,
+      "shape": [
+        32
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "Up2.up.1",
+      "scale": 0.004660035665757451,
+      "shape": [
+        16
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "Up_conv2.conv.0",
+      "scale": 0.003711346225596341,
+      "shape": [
+        32
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "Up_conv2.conv.3",
+      "scale": 0.004793702761639339,
+      "shape": [
+        64
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "Up_conv2.conv.6",
+      "scale": 0.009523571526003171,
+      "shape": [
+        16
+      ],
+      "zero_point": 0
+    },
+    {
+      "name": "Conv_1x1",
+      "scale": 0.05503159422488502,
+      "shape": [
+        1
+      ],
+      "zero_point": 0
+    }
+  ],
+  "quantized_weights": [
+    {
+      "name": "stem.conv.0",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.9824233167753444,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        16,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "encoder1.block.0.0.fn.0",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0038941073136066827,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        16,
+        1,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "encoder1.block.0.1",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0027059511406215156,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        64,
+        16,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "encoder1.block.0.4",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.001805736323979896,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        16,
+        64,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "encoder1.up.conv.0",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0011787626921661257,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        16,
+        16,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "encoder2.block.0.0.fn.0",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.003927922389638705,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        16,
+        1,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "encoder2.block.0.1",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0024286334908853366,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        64,
+        16,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "encoder2.block.0.4",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0026069851372185655,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        16,
+        64,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "encoder2.up.conv.0",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0014771589144008366,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        32,
+        16,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "encoder3.block.0.0.fn.0",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0024959184522703876,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        32,
+        1,
+        7,
+        7
+      ]
+    },
+    {
+      "name": "encoder3.block.0.1",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.002205622243130301,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        128,
+        32,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "encoder3.block.0.4",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0021401071172999584,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        32,
+        128,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "encoder3.up.conv.0",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.000985024482246459,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        128,
+        32,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "encoder4.block.0.0.fn.0",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0017801071480503233,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        128,
+        1,
+        7,
+        7
+      ]
+    },
+    {
+      "name": "encoder4.block.0.1",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0011181712854565597,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        512,
+        128,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "encoder4.block.0.4",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0009630648052598548,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        128,
+        512,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "encoder4.block.1.0.fn.0",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0016681784250604825,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        128,
+        1,
+        7,
+        7
+      ]
+    },
+    {
+      "name": "encoder4.block.1.1",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0009952023273377907,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        512,
+        128,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "encoder4.block.1.4",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0008838644295226871,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        128,
+        512,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "encoder4.block.2.0.fn.0",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0018739681544266348,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        128,
+        1,
+        7,
+        7
+      ]
+    },
+    {
+      "name": "encoder4.block.2.1",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0008696665562043978,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        512,
+        128,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "encoder4.block.2.4",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.000731569634178492,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        128,
+        512,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "encoder4.up.conv.0",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0004146362794196512,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        160,
+        128,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "encoder5.block.0.0.fn.0",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0019930002726907805,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        160,
+        1,
+        7,
+        7
+      ]
+    },
+    {
+      "name": "encoder5.block.0.1",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.000979490695506569,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        640,
+        160,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "encoder5.block.0.4",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0005937121867194889,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        160,
+        640,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "encoder5.up.conv.0",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0005058536496688062,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        256,
+        160,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "Up5.up.1",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0004792011628939411,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        160,
+        256,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "Up_conv5.conv.0",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0003667485232897631,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        320,
+        160,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "Up_conv5.conv.3",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0005163316886256061,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        640,
+        320,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Up_conv5.conv.6",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.00040975142651655545,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        160,
+        640,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Up4.up.1",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.000460708997850343,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        128,
+        160,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "Up_conv4.conv.0",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.00042131634091767736,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        256,
+        128,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "Up_conv4.conv.3",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0005840033762098297,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        512,
+        256,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Up_conv4.conv.6",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0004982015513998317,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        128,
+        512,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Up3.up.1",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0004484237237708775,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        32,
+        128,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "Up_conv3.conv.0",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0007117688655853271,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        64,
+        32,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "Up_conv3.conv.3",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0012804624133222686,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        128,
+        64,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Up_conv3.conv.6",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0009580331993853952,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        32,
+        128,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Up2.up.1",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.00041901681014871973,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        16,
+        32,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "Up_conv2.conv.0",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0009142732995701587,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        32,
+        16,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "Up_conv2.conv.3",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0017423056007370235,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        64,
+        32,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Up_conv2.conv.6",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.0016780295005933506,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        16,
+        64,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Conv_1x1",
+      "qparams": {
+        "dtype": "int8",
+        "qmax": 127,
+        "qmin": -128,
+        "scale": 0.01119241752023772,
+        "symmetric": true,
+        "zero_point": 0
+      },
+      "shape": [
+        1,
+        16,
+        1,
+        1
+      ]
+    }
+  ]
+}

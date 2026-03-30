@@ -1,0 +1,22 @@
+{
+  "files": {
+    "activation_qparams": "activation_qparams.json",
+    "biases": "biases.npz",
+    "bn_params": "bn_params.json",
+    "conv_params": "conv_params.json",
+    "decomposed_execution_trace": null,
+    "execution_trace": "execution_trace.json",
+    "gelu_luts": "gelu_luts.json",
+    "qparams": "qparams.json",
+    "requant_params": "requant_params.json",
+    "weights": "weights.npz"
+  },
+  "num_activation_qparams": 244,
+  "num_bn_params": 33,
+  "num_conv_params": 44,
+  "num_gelu_luts": 33,
+  "num_quantized_biases": 44,
+  "num_quantized_weights": 44,
+  "num_requant_params": 44,
+  "num_trace_entries": 125
+}

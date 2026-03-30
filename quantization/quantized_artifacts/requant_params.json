@@ -1,0 +1,618 @@
+[
+  {
+    "input_tensor_names": [
+      "input"
+    ],
+    "name": "stem.conv.0",
+    "output_tensor_name": "stem.conv.0:out",
+    "params": {
+      "multiplier_int": 1396421894,
+      "out_zero_point": -7,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -9
+    }
+  },
+  {
+    "input_tensor_names": [
+      "stem.conv.0:out"
+    ],
+    "name": "encoder1.block.0.0.fn.0",
+    "output_tensor_name": "encoder1.block.0.0.fn.0:out",
+    "params": {
+      "multiplier_int": 1492903584,
+      "out_zero_point": -12,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -7
+    }
+  },
+  {
+    "input_tensor_names": [
+      "encoder1.block.0.0:out"
+    ],
+    "name": "encoder1.block.0.1",
+    "output_tensor_name": "encoder1.block.0.1:out",
+    "params": {
+      "multiplier_int": 1073758503,
+      "out_zero_point": 13,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -7
+    }
+  },
+  {
+    "input_tensor_names": [
+      "encoder1.block.0.3:out"
+    ],
+    "name": "encoder1.block.0.4",
+    "output_tensor_name": "encoder1.block.0.4:out",
+    "params": {
+      "multiplier_int": 1683024935,
+      "out_zero_point": -1,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -9
+    }
+  },
+  {
+    "input_tensor_names": [
+      "encoder1.block.0.6:out"
+    ],
+    "name": "encoder1.up.conv.0",
+    "output_tensor_name": "encoder1.up.conv.0:out",
+    "params": {
+      "multiplier_int": 1177481487,
+      "out_zero_point": -19,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -8
+    }
+  },
+  {
+    "input_tensor_names": [
+      "Maxpool:out"
+    ],
+    "name": "encoder2.block.0.0.fn.0",
+    "output_tensor_name": "encoder2.block.0.0.fn.0:out",
+    "params": {
+      "multiplier_int": 1393002731,
+      "out_zero_point": -48,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -6
+    }
+  },
+  {
+    "input_tensor_names": [
+      "encoder2.block.0.0:out"
+    ],
+    "name": "encoder2.block.0.1",
+    "output_tensor_name": "encoder2.block.0.1:out",
+    "params": {
+      "multiplier_int": 1186181021,
+      "out_zero_point": -19,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -7
+    }
+  },
+  {
+    "input_tensor_names": [
+      "encoder2.block.0.3:out"
+    ],
+    "name": "encoder2.block.0.4",
+    "output_tensor_name": "encoder2.block.0.4:out",
+    "params": {
+      "multiplier_int": 1964445681,
+      "out_zero_point": -26,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -9
+    }
+  },
+  {
+    "input_tensor_names": [
+      "encoder2.block.0.6:out"
+    ],
+    "name": "encoder2.up.conv.0",
+    "output_tensor_name": "encoder2.up.conv.0:out",
+    "params": {
+      "multiplier_int": 1739038091,
+      "out_zero_point": -52,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -9
+    }
+  },
+  {
+    "input_tensor_names": [
+      "Maxpool:out"
+    ],
+    "name": "encoder3.block.0.0.fn.0",
+    "output_tensor_name": "encoder3.block.0.0.fn.0:out",
+    "params": {
+      "multiplier_int": 2003282133,
+      "out_zero_point": -9,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -8
+    }
+  },
+  {
+    "input_tensor_names": [
+      "encoder3.block.0.0:out"
+    ],
+    "name": "encoder3.block.0.1",
+    "output_tensor_name": "encoder3.block.0.1:out",
+    "params": {
+      "multiplier_int": 1165257721,
+      "out_zero_point": -3,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -7
+    }
+  },
+  {
+    "input_tensor_names": [
+      "encoder3.block.0.3:out"
+    ],
+    "name": "encoder3.block.0.4",
+    "output_tensor_name": "encoder3.block.0.4:out",
+    "params": {
+      "multiplier_int": 1120436016,
+      "out_zero_point": -24,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -8
+    }
+  },
+  {
+    "input_tensor_names": [
+      "encoder3.block.0.6:out"
+    ],
+    "name": "encoder3.up.conv.0",
+    "output_tensor_name": "encoder3.up.conv.0:out",
+    "params": {
+      "multiplier_int": 1557873094,
+      "out_zero_point": -14,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -10
+    }
+  },
+  {
+    "input_tensor_names": [
+      "Maxpool:out"
+    ],
+    "name": "encoder4.block.0.0.fn.0",
+    "output_tensor_name": "encoder4.block.0.0.fn.0:out",
+    "params": {
+      "multiplier_int": 1166315143,
+      "out_zero_point": -20,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -7
+    }
+  },
+  {
+    "input_tensor_names": [
+      "encoder4.block.0.0:out"
+    ],
+    "name": "encoder4.block.0.1",
+    "output_tensor_name": "encoder4.block.0.1:out",
+    "params": {
+      "multiplier_int": 1235716636,
+      "out_zero_point": -6,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -9
+    }
+  },
+  {
+    "input_tensor_names": [
+      "encoder4.block.0.3:out"
+    ],
+    "name": "encoder4.block.0.4",
+    "output_tensor_name": "encoder4.block.0.4:out",
+    "params": {
+      "multiplier_int": 1308480243,
+      "out_zero_point": -3,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -10
+    }
+  },
+  {
+    "input_tensor_names": [
+      "encoder4.block.0.6:out"
+    ],
+    "name": "encoder4.block.1.0.fn.0",
+    "output_tensor_name": "encoder4.block.1.0.fn.0:out",
+    "params": {
+      "multiplier_int": 2084987690,
+      "out_zero_point": 6,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -9
+    }
+  },
+  {
+    "input_tensor_names": [
+      "encoder4.block.1.0:out"
+    ],
+    "name": "encoder4.block.1.1",
+    "output_tensor_name": "encoder4.block.1.1:out",
+    "params": {
+      "multiplier_int": 1327104904,
+      "out_zero_point": -4,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -9
+    }
+  },
+  {
+    "input_tensor_names": [
+      "encoder4.block.1.3:out"
+    ],
+    "name": "encoder4.block.1.4",
+    "output_tensor_name": "encoder4.block.1.4:out",
+    "params": {
+      "multiplier_int": 2007882992,
+      "out_zero_point": 3,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -11
+    }
+  },
+  {
+    "input_tensor_names": [
+      "encoder4.block.1.6:out"
+    ],
+    "name": "encoder4.block.2.0.fn.0",
+    "output_tensor_name": "encoder4.block.2.0.fn.0:out",
+    "params": {
+      "multiplier_int": 1891654711,
+      "out_zero_point": 14,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -9
+    }
+  },
+  {
+    "input_tensor_names": [
+      "encoder4.block.2.0:out"
+    ],
+    "name": "encoder4.block.2.1",
+    "output_tensor_name": "encoder4.block.2.1:out",
+    "params": {
+      "multiplier_int": 1289700552,
+      "out_zero_point": 0,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -9
+    }
+  },
+  {
+    "input_tensor_names": [
+      "encoder4.block.2.3:out"
+    ],
+    "name": "encoder4.block.2.4",
+    "output_tensor_name": "encoder4.block.2.4:out",
+    "params": {
+      "multiplier_int": 2085200278,
+      "out_zero_point": -13,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -11
+    }
+  },
+  {
+    "input_tensor_names": [
+      "encoder4.block.2.6:out"
+    ],
+    "name": "encoder4.up.conv.0",
+    "output_tensor_name": "encoder4.up.conv.0:out",
+    "params": {
+      "multiplier_int": 1663286982,
+      "out_zero_point": -1,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -11
+    }
+  },
+  {
+    "input_tensor_names": [
+      "Maxpool:out"
+    ],
+    "name": "encoder5.block.0.0.fn.0",
+    "output_tensor_name": "encoder5.block.0.0.fn.0:out",
+    "params": {
+      "multiplier_int": 1500805785,
+      "out_zero_point": 27,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -7
+    }
+  },
+  {
+    "input_tensor_names": [
+      "encoder5.block.0.0:out"
+    ],
+    "name": "encoder5.block.0.1",
+    "output_tensor_name": "encoder5.block.0.1:out",
+    "params": {
+      "multiplier_int": 1274374228,
+      "out_zero_point": 18,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -9
+    }
+  },
+  {
+    "input_tensor_names": [
+      "encoder5.block.0.3:out"
+    ],
+    "name": "encoder5.block.0.4",
+    "output_tensor_name": "encoder5.block.0.4:out",
+    "params": {
+      "multiplier_int": 1508634594,
+      "out_zero_point": 29,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -10
+    }
+  },
+  {
+    "input_tensor_names": [
+      "encoder5.block.0.6:out"
+    ],
+    "name": "encoder5.up.conv.0",
+    "output_tensor_name": "encoder5.up.conv.0:out",
+    "params": {
+      "multiplier_int": 2040955498,
+      "out_zero_point": 7,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -11
+    }
+  },
+  {
+    "input_tensor_names": [
+      "Up5.up.0:out"
+    ],
+    "name": "Up5.up.1",
+    "output_tensor_name": "Up5.up.1:out",
+    "params": {
+      "multiplier_int": 1218266566,
+      "out_zero_point": -3,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -11
+    }
+  },
+  {
+    "input_tensor_names": [
+      "Up_conv5.conv.0:input0"
+    ],
+    "name": "Up_conv5.conv.0",
+    "output_tensor_name": "Up_conv5.conv.0:out",
+    "params": {
+      "multiplier_int": 1189034220,
+      "out_zero_point": 19,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -11
+    }
+  },
+  {
+    "input_tensor_names": [
+      "Up_conv5.conv.2:out"
+    ],
+    "name": "Up_conv5.conv.3",
+    "output_tensor_name": "Up_conv5.conv.3:out",
+    "params": {
+      "multiplier_int": 1563456531,
+      "out_zero_point": -3,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -10
+    }
+  },
+  {
+    "input_tensor_names": [
+      "Up_conv5.conv.5:out"
+    ],
+    "name": "Up_conv5.conv.6",
+    "output_tensor_name": "Up_conv5.conv.6:out",
+    "params": {
+      "multiplier_int": 1944260591,
+      "out_zero_point": 42,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -11
+    }
+  },
+  {
+    "input_tensor_names": [
+      "Up4.up.0:out"
+    ],
+    "name": "Up4.up.1",
+    "output_tensor_name": "Up4.up.1:out",
+    "params": {
+      "multiplier_int": 1924304423,
+      "out_zero_point": -15,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -11
+    }
+  },
+  {
+    "input_tensor_names": [
+      "Up_conv4.conv.0:input0"
+    ],
+    "name": "Up_conv4.conv.0",
+    "output_tensor_name": "Up_conv4.conv.0:out",
+    "params": {
+      "multiplier_int": 1348298012,
+      "out_zero_point": 8,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -10
+    }
+  },
+  {
+    "input_tensor_names": [
+      "Up_conv4.conv.2:out"
+    ],
+    "name": "Up_conv4.conv.3",
+    "output_tensor_name": "Up_conv4.conv.3:out",
+    "params": {
+      "multiplier_int": 1159700148,
+      "out_zero_point": 0,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -9
+    }
+  },
+  {
+    "input_tensor_names": [
+      "Up_conv4.conv.5:out"
+    ],
+    "name": "Up_conv4.conv.6",
+    "output_tensor_name": "Up_conv4.conv.6:out",
+    "params": {
+      "multiplier_int": 1615077161,
+      "out_zero_point": 13,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -10
+    }
+  },
+  {
+    "input_tensor_names": [
+      "Up3.up.0:out"
+    ],
+    "name": "Up3.up.1",
+    "output_tensor_name": "Up3.up.1:out",
+    "params": {
+      "multiplier_int": 1810373270,
+      "out_zero_point": 26,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -10
+    }
+  },
+  {
+    "input_tensor_names": [
+      "Up_conv3.conv.0:input0"
+    ],
+    "name": "Up_conv3.conv.0",
+    "output_tensor_name": "Up_conv3.conv.0:out",
+    "params": {
+      "multiplier_int": 1644092856,
+      "out_zero_point": -22,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -9
+    }
+  },
+  {
+    "input_tensor_names": [
+      "Up_conv3.conv.2:out"
+    ],
+    "name": "Up_conv3.conv.3",
+    "output_tensor_name": "Up_conv3.conv.3:out",
+    "params": {
+      "multiplier_int": 1244526502,
+      "out_zero_point": -7,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -8
+    }
+  },
+  {
+    "input_tensor_names": [
+      "Up_conv3.conv.5:out"
+    ],
+    "name": "Up_conv3.conv.6",
+    "output_tensor_name": "Up_conv3.conv.6:out",
+    "params": {
+      "multiplier_int": 1534644435,
+      "out_zero_point": 6,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -9
+    }
+  },
+  {
+    "input_tensor_names": [
+      "Up2.up.0:out"
+    ],
+    "name": "Up2.up.1",
+    "output_tensor_name": "Up2.up.1:out",
+    "params": {
+      "multiplier_int": 1180890932,
+      "out_zero_point": -3,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -9
+    }
+  },
+  {
+    "input_tensor_names": [
+      "Up_conv2.conv.0:input0"
+    ],
+    "name": "Up_conv2.conv.0",
+    "output_tensor_name": "Up_conv2.conv.0:out",
+    "params": {
+      "multiplier_int": 1527820413,
+      "out_zero_point": -25,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -9
+    }
+  },
+  {
+    "input_tensor_names": [
+      "Up_conv2.conv.2:out"
+    ],
+    "name": "Up_conv2.conv.3",
+    "output_tensor_name": "Up_conv2.conv.3:out",
+    "params": {
+      "multiplier_int": 1467046239,
+      "out_zero_point": 0,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -9
+    }
+  },
+  {
+    "input_tensor_names": [
+      "Up_conv2.conv.5:out"
+    ],
+    "name": "Up_conv2.conv.6",
+    "output_tensor_name": "Up_conv2.conv.6:out",
+    "params": {
+      "multiplier_int": 1241905917,
+      "out_zero_point": 6,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -8
+    }
+  },
+  {
+    "input_tensor_names": [
+      "Up_conv2.conv.8:out"
+    ],
+    "name": "Conv_1x1",
+    "output_tensor_name": "Conv_1x1:out",
+    "params": {
+      "multiplier_int": 1772543619,
+      "out_zero_point": 20,
+      "qmax": 127,
+      "qmin": -128,
+      "shift": -6
+    }
+  }
+]

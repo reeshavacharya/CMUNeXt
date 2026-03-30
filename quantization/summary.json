@@ -1,0 +1,127 @@
+{
+  "checkpoint_path": "../checkpoint/CMUNeXt_model_busi_train.pth",
+  "model_variant": "base",
+  "total_parameters": 3147297,
+  "folded_pairs": [
+    {
+      "conv_name": "stem.conv.0",
+      "bn_name": "stem.conv.1",
+      "conv_out_channels": 16,
+      "conv_in_channels": 3,
+      "kernel_size": [
+        3,
+        3
+      ],
+      "groups": 1,
+      "eps": 1e-05
+    },
+    {
+      "conv_name": "encoder1.up.conv.0",
+      "bn_name": "encoder1.up.conv.1",
+      "conv_out_channels": 16,
+      "conv_in_channels": 16,
+      "kernel_size": [
+        3,
+        3
+      ],
+      "groups": 1,
+      "eps": 1e-05
+    },
+    {
+      "conv_name": "encoder2.up.conv.0",
+      "bn_name": "encoder2.up.conv.1",
+      "conv_out_channels": 32,
+      "conv_in_channels": 16,
+      "kernel_size": [
+        3,
+        3
+      ],
+      "groups": 1,
+      "eps": 1e-05
+    },
+    {
+      "conv_name": "encoder3.up.conv.0",
+      "bn_name": "encoder3.up.conv.1",
+      "conv_out_channels": 128,
+      "conv_in_channels": 32,
+      "kernel_size": [
+        3,
+        3
+      ],
+      "groups": 1,
+      "eps": 1e-05
+    },
+    {
+      "conv_name": "encoder4.up.conv.0",
+      "bn_name": "encoder4.up.conv.1",
+      "conv_out_channels": 160,
+      "conv_in_channels": 128,
+      "kernel_size": [
+        3,
+        3
+      ],
+      "groups": 1,
+      "eps": 1e-05
+    },
+    {
+      "conv_name": "encoder5.up.conv.0",
+      "bn_name": "encoder5.up.conv.1",
+      "conv_out_channels": 256,
+      "conv_in_channels": 160,
+      "kernel_size": [
+        3,
+        3
+      ],
+      "groups": 1,
+      "eps": 1e-05
+    },
+    {
+      "conv_name": "Up5.up.1",
+      "bn_name": "Up5.up.2",
+      "conv_out_channels": 160,
+      "conv_in_channels": 256,
+      "kernel_size": [
+        3,
+        3
+      ],
+      "groups": 1,
+      "eps": 1e-05
+    },
+    {
+      "conv_name": "Up4.up.1",
+      "bn_name": "Up4.up.2",
+      "conv_out_channels": 128,
+      "conv_in_channels": 160,
+      "kernel_size": [
+        3,
+        3
+      ],
+      "groups": 1,
+      "eps": 1e-05
+    },
+    {
+      "conv_name": "Up3.up.1",
+      "bn_name": "Up3.up.2",
+      "conv_out_channels": 32,
+      "conv_in_channels": 128,
+      "kernel_size": [
+        3,
+        3
+      ],
+      "groups": 1,
+      "eps": 1e-05
+    },
+    {
+      "conv_name": "Up2.up.1",
+      "bn_name": "Up2.up.2",
+      "conv_out_channels": 16,
+      "conv_in_channels": 32,
+      "kernel_size": [
+        3,
+        3
+      ],
+      "groups": 1,
+      "eps": 1e-05
+    }
+  ]
+}
